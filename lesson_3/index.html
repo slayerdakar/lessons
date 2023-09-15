@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Варіант №3 !! Основний !! (підключення окремого файлу) -->
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 3</title>
+		<!-- Варіант №1 (тег style) -->
+		<!-- 
+		<style>
+			div{
+				color: blue;
+			}
+		</style>
+		 -->
+	</head>
+	<body>
+
+		<!-- Приклад для пояснення стилів -->
+		<header></header>
+		<main>
+			<div>
+				<h1>Заголовок</h1>
+				<div>
+					<!--Варіант №2 (рядковий метод) (Атрибут style) -->
+					<!-- style="color:green;" -->
+					<p>Lorem ipsum dolor sit amet <mark>consectetur adipisicing</mark> elit. Maiores culpa tempora sit consectetur explicabo? Aliquam qui optio, necessitatibus amet minus ipsam ad ea vel, sed asperiores at earum. Dolore, cupiditate?</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores culpa tempora sit consectetur explicabo? <a href="#">Aliquam qui optio</a>, necessitatibus amet minus ipsam ad ea vel, sed asperiores at earum. Dolore, cupiditate?</p>
+					<p>Lorem ipsum <span>dolor sit amet consectetur</span> adipisicing elit. Maiores culpa tempora sit consectetur explicabo? Aliquam qui optio, necessitatibus amet minus ipsam ad ea vel, sed asperiores at earum. Dolore, cupiditate?</p>
+				</div>
+				<div>
+					<img src="img/honey.jpg" alt="Honey">
+				</div>
+				<ul>
+					<li>Пункт</li>
+					<li>Пункт</li>
+					<li>Пункт</li>
+					<li>Пункт</li>
+				</ul>
+				<h2>Заголовок №2</h2>
+				<div>
+					<p>Lorem ipsum dolor sit amet <mark>consectetur adipisicing</mark> elit. Maiores culpa tempora sit consectetur explicabo? Aliquam qui optio, necessitatibus amet minus ipsam ad ea vel, sed asperiores at earum. Dolore, cupiditate?</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores culpa tempora sit consectetur explicabo? <a href="#">Aliquam qui optio</a>, necessitatibus amet minus ipsam ad ea vel, sed asperiores at earum. Dolore, cupiditate?</p>
+					<p>Lorem ipsum <span>dolor sit amet consectetur</span> adipisicing elit. Maiores culpa tempora sit consectetur explicabo? Aliquam qui optio, necessitatibus amet minus ipsam ad ea vel, sed asperiores at earum. Dolore, cupiditate?</p>
+				</div>
+				<h2>Заголовок №2</h2>
+				<div>
+					<p>Lorem ipsum dolor sit amet <mark>consectetur adipisicing</mark> elit. Maiores culpa tempora sit consectetur explicabo? Aliquam qui optio, necessitatibus amet minus ipsam ad ea vel, sed asperiores at earum. Dolore, cupiditate?</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores culpa tempora sit consectetur explicabo? <a href="#">Aliquam qui optio</a>, necessitatibus amet minus ipsam ad ea vel, sed asperiores at earum. Dolore, cupiditate?</p>
+					<p>Lorem ipsum <span>dolor sit amet consectetur</span> adipisicing elit. Maiores culpa tempora sit consectetur explicabo? Aliquam qui optio, necessitatibus amet minus ipsam ad ea vel, sed asperiores at earum. Dolore, cupiditate?</p>
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+
+		<!------------------------- Атрибут class --------------------------->
+		<!-- 
+			Зв'язує CSS стіли з HTML-тегами
+			Використовується для класифікації (групування)
+			HTML-тегів з метою надання їм певних стилів.
+		 -->
+		<!-- 
+			Правила написання імен класів: 
+			1) Англійська мова (Приклад: title)
+			2) Нижній регістр (Приклад: title)
+			3) Пробіли замінюємо на дефіс (Приклад: big-title)
+			4) Ім'я класу вільне, але має відображати що виводить HTML-елемент 
+				та бути адекватним
+			5) Назва класу НЕ МОЖЕ починатись з цифри та спец. символив
+		-->
+
+		<!-- Приклади: -->
+		<a href="#" class="link">Text</a>
+		<div class="block"></div>
+		<h1 class="title"></h1>
+		<h2 class="sub-title"></h2>
+		<ul class="list">
+			<li class="item"></li>
+		</ul>
+
+		<!-- Для бекенду гарно не задавати класи текстовим елементам -->
+		<div class="text">
+			<p>Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing</a> elit. Incidunt veniam rem ea iste quo, omnis enim a assumenda sapiente illo architecto. Amet officiis delectus molestiae. At assumenda nemo itaque odit!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam rem ea iste quo, omnis enim a assumenda sapiente illo architecto. Amet officiis delectus molestiae. At assumenda nemo itaque odit!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam rem ea iste quo, omnis enim a assumenda sapiente illo architecto. Amet officiis delectus molestiae. At assumenda nemo itaque odit!</p>
+		</div>
+
+		<!-- 
+			Один клас може застосовуватись 
+			до багатьох HTML-тегів 
+		-->
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<a href="#" class="block"></a>
+		<ul class="block">
+			<li class="item"></li>
+		</ul>
+
+		<!-- 
+			Для одного HTML-тегу може бути додано безліч 
+			значеннь атрибуту class (через пробіл)
+		 -->
+		<div class="block">
+			<h1 class="block__title title"></h1>
+		</div>
+
+		<!-- Це два класи big та title -->
+		<h1 class="big title"></h1>
+
+		<!-- Це один клас big-title -->
+		<h1 class="big-title"></h1>
+
+		<!-- ------------------------------------------------------------- -->
+
+		<!-- Приклад шляху -->
+		<img src="img/honey.jpg" alt="Honey">
+		<!-- Вкладенність списків -->
+		<ul>
+			<!-- Тут ми нічого не пишеко окрім li -->
+			<li>
+				<!-- Тут ми можемо писати інші теги у тому числі нові списки -->
+				<ul>
+					<li></li>
+					<!-- .... -->
+					<li></li>
+				</ul>
+			</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<!-- HTML-вкладеність та конструкції -->
+		<!-- 
+			Загальне правило вкладеності:
+			В більшість рядкових тегів 
+			не можна вкладати блочні теги 
+		-->
+		<!-- Зазвичай вкладеніть виконується так: -->
+		<!-- 
+			будівельні теги -> теги для контенту
+		 -->
+
+		<!-- ВИКЛЮЧЕННЯ -->
+		<!-- 
+			В тег A дозволяється вкладати будівельні теги,
+			якщо цього вимагає макет дизайну
+		 -->
+		<!-- 
+		<a href="#">
+			<div>
+				<p>
+					<span></span>
+				</p>
+			</div>
+		</a>
+		 -->
+
+		<!-- НЕ ВІРНО -->
+		<!-- 
+		<span>
+			<header></header>
+			<div></div>
+			<footer></footer>
+			<h1></h1>
+			<p></p>
+		</span>
+		 -->
+
+		<!-- НЕ ВІРНО (BR) -->
+		<!-- 
+		<main>
+			<div>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+			<br><br><br>
+			<div></div>
+		</main>
+		 -->
+
+		<!-- НЕ ВІРНО (UL) -->
+		<!-- 
+		<ul>
+			<div></div>
+		</ul>
+		 -->
+
+		<!-- ЦЕ ВІРНО -->
+		<!-- 
+		<p>
+			Lorem ipsum <span>dolor sit amet consectetur</span>, adipisicing elit. Nulla possimus quaerat voluptatem assumenda totam sint quibusdam molestias aliquam nesciunt magnam? Ea eius quos quae qui, iusto mollitia aliquam voluptate. Corrupti.
+		</p>
+		 -->
+
+		<!-- ЦЕ ВІРНО -->
+		<!-- 
+		<div>
+			<div></div>
+		</div>
+		 -->
+
+		<!-- ЦЕ ВІРНО -->
+		<!-- 
+		<header>
+			<div>
+				<a href="#"></a>
+				<ul>
+					<li></li>
+				</ul>
+				<div></div>
+			</div>
+		</header>
+		<main>
+			<div></div>
+			<a href="#"></a>
+			<p></p>
+			<ul>
+				<li></li>
+			</ul>
+			<div>
+				<a href="#"></a>
+				<p></p>
+			</div>
+		</main>
+		<footer>
+			<div></div>
+			<a href="#"></a>
+			<ul>
+				<li></li>
+			</ul>
+		</footer>
+		 -->
+
+		<!-- Рівні вкладеності -->
+
+		<!-- Нульовий рівень вкладеності -->
+		<header> <!-- Батьківським тегом для тегу DIV -->
+			<!-- 1-й (беспосередній) рівень вкладеності відносно тегу HEADER -->
+			<div>
+				<!-- 2-й рівень вкладеності відносно тегу HEADER -->
+				<!-- 1-й (беспосередній) рівень вкладеності відносно тегу DIV -->
+				<div>
+
+				</div><!-- Дочірнім тегом для тегу HEADER -->
+			</div><!-- Дочірнім тегом для тегу HEADER -->
+
+			<!-- 1-й (беспосередній) рівень вкладеності відносно тегу HEADER -->
+			<div>
+				<!-- 2-й рівень вкладеності відносно тегу HEADER -->
+				<!-- 1-й (беспосередній) рівень вкладеності відносно тегу DIV -->
+				<p>
+					<!-- 3-й рівень вкладеності відносно тегу HEADER -->
+					<!-- 2-й рівень вкладеності відносно тегу DIV -->
+					<!-- 1-й (беспосередній) рівень вкладеності відносно тегу P -->
+					<a href="#"></a>
+				</p>
+			</div>
+		</header>
+
+		<!-- Конструкції -->
+
+		<!-- Звичайна конструкція шапки сайту -->
+		<!-- 
+		<header>
+			<div>
+				<a href="#"></a>
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+				<div></div>
+			</div>
+		</header>
+		 -->
+		<!-- Звичайна конструкція підвалу сайту -->
+		<!-- 
+		<footer>
+			<div>
+				<a href="#"></a>
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+				<div></div>
+			</div>
+		</footer>
+		 -->
+		<!-- Звичайна конструкція тіла сайту -->
+		<!-- 
+		<main>
+			<div>
+				<h1></h1>
+				<p></p>
+				<p>
+					<a href></a>
+					<span></span>
+					<mark></mark>
+					<br>
+				</p>
+				<p></p>
+				<p></p>
+				<h2></h2>
+				<p></p>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<h2></h2>
+				<p></p>
+				<ol>
+					<li></li>
+				</ol>
+				<h3></h3>
+				<p></p>
+			</div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</main>
+		 -->
+
+		<!-- Конструкція текстової сторінки -->
+		<!-- 
+		<header>
+			<div>
+				<a href="#"></a>
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+				<div></div>
+			</div>
+		</header>
+		<main>
+			<div>
+				<h1></h1>
+				<p></p>
+				<p>
+					<a href></a>
+					<span></span>
+					<mark></mark>
+					<br>
+				</p>
+				<p></p>
+				<p></p>
+				<h2></h2>
+				<p></p>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<h2></h2>
+				<p></p>
+				<ol>
+					<li></li>
+				</ol>
+				<h3></h3>
+				<p></p>
+			</div>
+		</main>
+		<footer>
+			<div>
+				<a href="#"></a>
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+				<div></div>
+			</div>
+		</footer>
+		 -->
+
+		<!-- Приклад вкладеності в тег A -->
+		<!-- Обидва посилання ведуть на одну і ту ж сторінку -->
+		<!-- 
+		<div>
+			<a href="#">
+				<img src="img/honey.jpg" alt="Honey">
+			</a>
+		</div>
+		<div>
+			<a href="#">Text</a>
+		</div>
+		 -->
+
+		<!-- Оптимізований варіант -->
+		<!-- 
+		<a href="#">
+			<div>
+				<img src="img/honey.jpg" alt="Honey">
+			</div>
+			<div>
+				Text
+			</div>
+		</a>
+		 -->
+
+		<!-- ЗАБОРОНЄТЬСЯ -->
+
+		<!-- Вкладати A в A -->
+		<!-- 
+		<a href="#">
+			<a href="#"></a>
+		</a>
+		 -->
+
+		<!-- Залишати порожніми тег P -->
+		<!-- <p></p> -->
+
+		<!-- Залишати порожніми атрибути SRC HREF ALT -->
+		<!-- 
+		<img src alt>
+		<a href></a>
+		 -->
+
+		<!-- !!! Не забуваємо про призначення тегів !!! -->
+
+		<!-- 
+			Використовуємо P для виводу тексту, 
+			A для посилання, 
+			SPAN/MARK для виділення,
+			BR для переводу тексту в новий рядок
+			H1-H6 для заголовків
+		  -->
+		<!-- 
+		<div>
+			<p>
+				Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Eum est magni distinctio mollitia rerum libero itaque soluta, autem repellendus delectus vero rem, quia culpa veniam eaque assumenda incidunt temporibus aliquid!
+			</p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		 -->
+
+		<!-- Використовуємо UL/OL + LI для виводу списку (перелік) -->
+		<!-- 
+		<ul>
+			<li>
+				<a href="#"></a>
+			</li>
+		</ul>
+		 -->
+
+		<!-- Приклад вкладеності UL в OL -->
+		<!-- (!) Потребує перевірви валідатором -->
+		<ol>
+			<li></li>
+			<li>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</li>
+			<li></li>
+			<li></li>
+		</ol>
+
+	</body>
+</html>
