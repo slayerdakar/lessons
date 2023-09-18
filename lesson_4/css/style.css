@@ -1,0 +1,53 @@
+@import url("reset.css");
+
+*{
+  color: red;
+}
+
+p{
+  color: rgb(123, 123, 170);
+}
+
+a{
+  color: blue;
+}
+
+#title-1,
+#title-3,
+#title-5{
+  color: rgb(202, 23, 107);
+}
+
+#title-3{
+  color: black;
+}
+
+.header-title.title{
+  color: violet;
+}
+
+div mark{
+  color: white;
+}
+
+p a{
+  color: aqua;
+}
+
+.list-item-title + p{
+  color: orange;
+}
+
+.list-item > h3{
+  color: burlywood !important;
+} 
+
+.footer-list *{
+  color: aquamarine;
+}
+
+.footer-list ~ p{
+  color: black;
+}
+
+
