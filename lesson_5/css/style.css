@@ -37,7 +37,6 @@ body {
 }
 
 .text {
-  font-weight: 400;
   line-height: 1.46;
 }
 
@@ -63,6 +62,7 @@ body {
 .article-subtitle {
   font-family: "Nunito", sans-serif;
   font-size: 22px;
+  font-weight: 600;
   font-style: oblique;
   text-align: center;
   text-shadow:
