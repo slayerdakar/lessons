@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:600&display=swap");
+
+@import url(fonts.css);
+
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+.block-consulting {
+  width: 692px;
+}
+
+.block-information {
+  width: 830px;
+}
+
+.consulting-title,
+.consulting-subtitle,
+.information-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+.consulting-title {
+  font-size: 30px;
+  color: #37393f;
+}
+
+.consulting-subtitle {
+  font-size: 20px;
+  color: #6b77e5;
+}
+
+.text {
+  font-weight: 400;
+  line-height: 1.46;
+}
+
+.information-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #37393f;
+}
+
+.information-item {
+  font-weight: 500;
+  line-height: 1.46;
+}
+
+.new-article {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #222;
+}
+
+.article-title,
+.article-subtitle {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  font-style: oblique;
+  text-align: center;
+  text-shadow:
+    2px 3px 3px rgba(87, 65, 65, 0.226),
+    5px 5px 3px #5c3535;
+  letter-spacing: 1px;
+}
+
+.article-title {
+  text-transform: uppercase;
+}
+
+.article-title span {
+  text-shadow: none;
+  text-decoration: underline;
+}
+
+.article-subtitle {
+  font-size: 18px;
+}
+
+.article-subtitle-plus {
+  font-family: "Merriweather", serif;
+  text-shadow: 10px 10px 1px rgb(23, 150, 23);
+}
+
+.test-justify {
+  text-align: justify;
+}
+
+.article-text {
+  color: rgba(51, 47, 47, 0.8);
+  word-spacing: 5px;
+}
+
+.article-list + .article-text {
+  text-decoration: line-through;
+  white-space: nowrap;
+}
+
+.article-item {
+  text-decoration: underline;
+  text-indent: 30px;
+}
