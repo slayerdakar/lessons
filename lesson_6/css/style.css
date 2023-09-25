@@ -1,0 +1,271 @@
+@import url(fonts.css);
+
+@import url("reset.css");
+
+/* ------------------------------------Перша частина макету------------------------------------ */
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+
+.block-consulting {
+  max-width: 692px;
+  margin: 0 auto;
+}
+
+.consulting-img {
+  max-width: 100%;
+  margin: 0 0 37px 0;
+}
+
+.consulting-title,
+.consulting-subtitle,
+.benefits-title,
+.benefits-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+.consulting-title {
+  font-size: 30px;
+  color: #37393f;
+  margin: 0 0 3px 0;
+  text-transform: capitalize;
+}
+
+.consulting-title + .text {
+  margin: 0 0 42px 0;
+}
+
+.consulting-subtitle {
+  font-size: 20px;
+  color: #6b77e5;
+  margin: 0 0 12px 0;
+}
+
+.consulting-subtitle + .text {
+  margin: 0 0 40px 0;
+}
+
+.text {
+  line-height: 1.46;
+}
+
+.box-benefits {
+  font-size: 0;
+}
+
+.benefits {
+  display: inline-block;
+  max-width: 332px;
+  margin: 0 0 0 30px;
+}
+
+.box-benefits img {
+  max-width: 330px;
+  width: 100%;
+}
+
+.box-benefits img,
+.benefits {
+  font-size: 18px;
+}
+
+.benefits-title {
+  font-size: 25px;
+  color: #37393f;
+  margin: 0 0 15px 0;
+}
+
+.benefits-subtitle {
+  font-size: 20px;
+  color: #40ddb6;
+  margin: 0 0 21px 0;
+}
+
+.benefits-item {
+  padding: 0 0 0 35px;
+  margin: 0 0 30px 0;
+}
+
+/* ------------------------------------Друга частина макету------------------------------------ */
+
+.block-jewels {
+  background: #fff9f4;
+}
+
+.inner-jewels {
+  max-width: 1170px;
+  padding: 140px 0;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.jewels-create,
+.jewels-img-box img {
+  font-size: 20px;
+}
+
+.jewels-create {
+  max-width: 565px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 21px 0;
+}
+
+.jewels-img-box {
+  max-width: 568px;
+  display: inline-block;
+  margin: 0 0 0 38px;
+}
+
+.jewels-img-box img {
+  max-width: 273px;
+  width: 100%;
+}
+
+.jewels-img-box > img + img {
+  margin-left: 20px;
+}
+
+.create-what {
+  font-size: 28px;
+  color: #d06b00;
+  text-transform: uppercase;
+  line-height: normal;
+  margin: 0 0 13px 0;
+}
+
+.create-title {
+  font-family: "DM Serif Text", serif;
+  font-size: 59px;
+  line-height: 1.46;
+  color: #0e333d;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.create-text {
+  color: #474747;
+  line-height: 1.8;
+}
+
+/* ------------------------------------Тестування інших влвстівостей------------------------------------ */
+
+.block-article {
+  padding: 50px 0;
+  background-color: #cecece;
+}
+
+.new-article img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.new-article > img {
+  margin-bottom: 20px;
+}
+
+.new-article {
+  font-family: "Rubik", sans-serif;
+  max-width: 717px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #222;
+  margin: 0 auto;
+}
+
+.article-title,
+.article-subtitle {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  font-style: oblique;
+  text-align: center;
+  text-shadow:
+    2px 3px 3px rgba(87, 65, 65, 0.226),
+    5px 5px 3px #5c3535;
+  letter-spacing: 1px;
+}
+
+.article-title {
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+}
+
+.article-title span {
+  text-shadow: none;
+  text-decoration: underline;
+  background-color: #40ddb6;
+}
+
+.article-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.article-subtitle-plus {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  text-shadow: 10px 10px 1px rgb(23, 150, 23);
+}
+
+.test-justify {
+  text-align: justify;
+}
+
+.article-text {
+  color: rgba(51, 47, 47, 0.8);
+  word-spacing: 5px;
+  margin: 0 0 20px 0;
+}
+
+.article-text-scroll {
+  height: 100px;
+  overflow: auto;
+  padding: 10px 15px 10px 10px;
+  text-align: justify;
+  background-color: #fff9f4;
+}
+
+.article-list {
+  margin: 0 0 30px 0;
+}
+
+.article-list + .article-text {
+  text-decoration: line-through;
+}
+
+.article-item {
+  text-decoration: underline;
+}
+
+.box-img-bottom > img + img {
+  margin-top: -100px;
+}
+
+.hidden {
+  display: none;
+}
+
+.test-margin-1 {
+  margin-bottom: 50px;
+}
+.test-margin-2 {
+  margin-top: 80px;
+}
+
+.test-min-width {
+  min-width: 400px;
+}
+
+.test-min-height {
+  min-height: 200px;
+}
+
+.test-max-height {
+  max-height: 50px;
+}
