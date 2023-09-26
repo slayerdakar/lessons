@@ -171,7 +171,8 @@ body {
   background-color: #cecece;
 }
 
-.new-article img {
+.new-article img,
+.footer-box img {
   max-width: 100%;
   width: 100%;
 }
