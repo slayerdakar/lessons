@@ -10,6 +10,16 @@ body {
   color: #7d7d7d;
 }
 
+.header-title {
+  font-family: "DM Serif Text", serif;
+  font-size: 55px;
+  color: #cecece;
+  text-align: center;
+  padding: 40px 0;
+  text-shadow: 5px 6px 7px #0e333d;
+  line-height: 1.2;
+}
+
 .block-consulting {
   max-width: 692px;
   margin: 0 auto;
@@ -114,12 +124,12 @@ body {
   display: inline-block;
   vertical-align: top;
   padding: 21px 0;
+  margin: 0 38px 0 0;
 }
 
 .jewels-img-box {
   max-width: 568px;
   display: inline-block;
-  margin: 0 0 0 38px;
 }
 
 .jewels-img-box img {
@@ -127,8 +137,9 @@ body {
   width: 100%;
 }
 
-.jewels-img-box > img + img {
-  margin-left: 20px;
+.left-img-box {
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .create-what {
@@ -243,7 +254,16 @@ body {
   text-decoration: underline;
 }
 
-.box-img-bottom > img + img {
+.footer {
+  background-color: #cecece;
+}
+
+.footer-box {
+  max-width: 717px;
+  margin: 0 auto;
+}
+
+.footer-box-img > img + img {
   margin-top: -100px;
 }
 
