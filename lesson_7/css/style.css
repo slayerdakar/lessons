@@ -41,6 +41,7 @@ body {
   display: inline-block;
   padding: 70px 0;
   margin-right: 75px;
+  vertical-align: middle;
 }
 
 .develop-what,
@@ -73,12 +74,11 @@ body {
 .box-small-img,
 .box-large-img {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .box-small-img {
   width: 187px;
-  padding: 85px 0 86px 0;
   margin-right: 20px;
 }
 
