@@ -29,9 +29,6 @@ body {
   max-width: 1133px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.inner-develop {
   padding: 69px 0 157px 0;
   font-size: 0;
 }
@@ -126,9 +123,6 @@ body {
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.block-project {
   max-width: 830px;
   margin: 0 auto;
   padding: 50px 0;
@@ -136,6 +130,9 @@ body {
   font-size: 18px;
   color: #7d7d7d;
 }
+
+/* .block-project {
+} */
 
 .project-title {
   font-family: "Poppins", sans-serif;
@@ -169,12 +166,10 @@ body {
   max-width: 1250px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.block-licencing {
   font-family: "Inter", sans-serif;
   font-size: 18px;
   color: #7d7d7d;
+  line-height: normal;
   padding: 150px 0;
 }
 
@@ -189,7 +184,6 @@ body {
   height: 12px;
   background-color: #40ddb6;
 }
-
 .sub-title-text {
   display: inline-block;
   color: #37393f;
@@ -197,8 +191,11 @@ body {
 }
 
 .licencing-title,
-.item-title,
-.item-sub-title {
+.photography-title,
+.icons-title,
+.fonts-title,
+.icons-subtitle,
+.photography-subtitle {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #37393f;
@@ -211,48 +208,47 @@ body {
   margin-bottom: 70px;
 }
 
-.list-item {
+.box-content {
   margin-bottom: 100px;
 }
 
-.item-title {
+.photography-title,
+.icons-title,
+.fonts-title {
   font-size: 40px;
   line-height: 1.21;
   margin-bottom: 11px;
 }
 
-.icons-item-text {
+.icons-text,
+.photography-text {
+  line-height: 1.46;
+}
+
+.icons-box .icons-text {
   margin-bottom: 32px;
 }
 
-.item-sub-title {
+.photography-text {
+  margin-bottom: 24px;
+}
+
+.photography-text span,
+.fonts-text span,
+.icons-subtitle span,
+.photography-subtitle span {
+  color: #40ddb6;
+}
+
+.icons-subtitle,
+.photography-subtitle {
   font-size: 30px;
   margin-bottom: 8px;
 }
 
-.item-text {
-  margin-bottom: 24px;
-}
-
-.licencing-list span,
-.licencing-list h4 span,
-.item-text-color {
-  color: #40ddb6;
-}
-
-.licencing-list span {
-  font-weight: 500;
-}
-
-.licencing-list h4 span {
+.icons-subtitle span,
+.photography-subtitle span {
   font-weight: 400;
-}
-
-.item-text-color,
-.item-sub-title,
-.icons-item-text,
-.item-text {
-  line-height: 1.46;
 }
 
 /*----------------------------- Макет текстовий Clothing -----------------------------*/
@@ -261,9 +257,6 @@ body {
   max-width: 1270px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.box-clothing {
   font-family: "Causten", sans-serif;
   font-size: 20px;
   line-height: 1.67;
@@ -293,7 +286,7 @@ body {
 .clothing-sub-title,
 .clothing-link {
   font-family: "Core Sans C", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .clothing-title {
