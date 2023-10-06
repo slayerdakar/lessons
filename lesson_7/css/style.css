@@ -23,13 +23,13 @@ body {
 
 .develop-jewels {
   background-color: white;
+  padding: 69px 0 157px;
 }
 
 .develop-container {
   max-width: 1133px;
   margin: 0 auto;
   padding: 0 15px;
-  padding: 69px 0 157px 0;
   font-size: 0;
 }
 
@@ -119,20 +119,20 @@ body {
 
 /*------------------------- Макет текстовий Project Information -------------------------------*/
 
+.information {
+  padding: 50px 0;
+}
+
 .information-container {
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
   max-width: 830px;
   margin: 0 auto;
-  padding: 50px 0;
   font-family: "Inter", sans-serif;
   font-size: 18px;
   color: #7d7d7d;
 }
-
-/* .block-project {
-} */
 
 .project-title {
   font-family: "Poppins", sans-serif;
@@ -162,6 +162,10 @@ body {
 
 /*------------------------- Макет текстовий Licencing -------------------------------*/
 
+.licencing {
+  padding: 150px 0;
+}
+
 .licencing-container {
   max-width: 1250px;
   margin: 0 auto;
@@ -170,7 +174,6 @@ body {
   font-size: 18px;
   color: #7d7d7d;
   line-height: normal;
-  padding: 150px 0;
 }
 
 .licencing-sub-title {
@@ -253,6 +256,14 @@ body {
 
 /*----------------------------- Макет текстовий Clothing -----------------------------*/
 
+.clothing {
+  padding: 100px 0 100px;
+}
+
+.clothing-inner-article {
+  padding-left: 21px;
+}
+
 .clothing-container {
   max-width: 1270px;
   margin: 0 auto;
@@ -262,7 +273,6 @@ body {
   line-height: 1.67;
   letter-spacing: 0.4px;
   color: #807d7e;
-  padding: 100px 0 100px 21px;
 }
 
 .box-clothing span {
