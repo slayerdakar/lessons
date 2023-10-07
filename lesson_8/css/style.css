@@ -1,0 +1,383 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  color: #807d7e;
+}
+
+.header-title {
+  font-family: "DM Serif Text", serif;
+  font-size: 55px;
+  color: #cecece;
+  text-align: center;
+  padding: 40px 0;
+  text-shadow: 5px 6px 7px #0e333d;
+  line-height: 1.2;
+  box-shadow: inset 0px 0px 40px 40px rgba(150, 146, 146, 0.1);
+}
+
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*----------------------------- Макет текстовий Clothing -----------------------------*/
+
+.clothing {
+  padding: 100px 0 100px;
+}
+
+.clothing-inner-article {
+  padding-left: 21px;
+}
+
+.clothing-container {
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+}
+
+.clothing-container span {
+  font-weight: 700;
+}
+
+.clothing-title,
+.clothing-sub-title,
+.clothing-link {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 700;
+}
+
+.clothing-title {
+  display: inline-block;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.56px;
+  color: #3c4242;
+  padding-left: 20px;
+  background-image: url(../img/clothing/dekor-title.jpg);
+  background-repeat: no-repeat;
+  margin: 0 0 30px -20px;
+  min-height: 28px;
+}
+
+.clothing-sub-title {
+  margin-bottom: 25px;
+}
+
+.clothing-text {
+  margin-bottom: 25px;
+}
+
+.clothing-text ~ .clothing-text {
+  margin-bottom: 20px;
+}
+
+.clothing-text p {
+  margin-bottom: 20px;
+}
+
+/* -------------------------------fashion---------------------------------------- */
+
+.fashion-container {
+  font-size: 0;
+}
+
+.fashion-inner {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.fashion-contant-box {
+  display: inline-block;
+  max-width: 614px;
+  padding: 184px 74px 184px;
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url(../img/fashion/fashion-bg.jpg) 50% / cover no-repeat;
+}
+
+.fashion-title {
+  color: #fff;
+  font-family: "Core Sans C", sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.47;
+  letter-spacing: 0.208px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.fashion-text,
+.fashion-btn {
+  font-family: "Causten", sans-serif;
+  line-height: normal;
+}
+
+.fashion-text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.fashion-btn {
+  color: #3c4242;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 44px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.fashion-inner img {
+  max-width: 626px;
+  width: 100%;
+}
+
+/* -----------------------------business----------------------------------- */
+
+.business {
+  padding: 145px 0 167px;
+}
+
+.business-container,
+.projects-container {
+  color: #7d7d7d;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+.business-container {
+  max-width: 673px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.business-subtitle,
+.business-title,
+.info-title,
+.projects-subtitle,
+.projects-title,
+.card-title {
+  color: #37393f;
+  text-transform: capitalize;
+}
+
+.business-subtitle,
+.projects-subtitle {
+  font-weight: 500;
+  line-height: 1.22;
+  padding-left: 18px;
+  background: url(../img/business/subtitle-icon.jpg) 0 5px no-repeat;
+  min-height: 17px;
+  margin-bottom: 16px;
+}
+
+.business-title,
+.business-list,
+.info-title,
+.projects-title,
+.card-title {
+  font-family: "Poppins", sans-serif;
+}
+
+.business-title,
+.projects-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.business-title {
+  max-width: 420px;
+  margin-bottom: 20px;
+}
+
+.business-text {
+  line-height: 1.46;
+  margin-bottom: 20px;
+}
+
+.business-text p {
+  margin-bottom: 15px;
+}
+
+.business-list {
+  font-size: 20px;
+  margin-bottom: 43px;
+}
+
+.business-item {
+  padding-left: 35px;
+  background: url(../img/business/list-icon.jpg) 0 3px no-repeat;
+  margin-bottom: 23px;
+  line-height: 1.65;
+  min-height: 30px;
+}
+
+.business-info-box {
+  margin-bottom: 58px;
+  font-size: 0;
+}
+
+.info-experience {
+  padding: 31px 32px 32px;
+  margin-right: 21px;
+}
+
+.info-awards {
+  padding: 31px 34px 31px 36px;
+}
+
+.info-experience,
+.info-awards {
+  display: inline-block;
+  max-width: 296px;
+  border: 1px solid #e3e3e3;
+  vertical-align: top;
+}
+
+.info-experience .info-content {
+  background: url(../img/business/Info-icon1.png) no-repeat;
+}
+
+.info-awards .info-content {
+  background: url(../img/business/info-icon2.png) no-repeat;
+}
+
+.info-content {
+  padding-left: 58px;
+  min-height: 42px;
+}
+
+.info-title {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.info-content p {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.business-btn {
+  padding: 22px 27px;
+  background: #6b77e5;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  line-height: 1.22;
+}
+
+/* ------------------------------projects--------------------------------- */
+
+.projects {
+  padding: 150px 0;
+}
+
+.projects-container {
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.projects-content {
+  max-width: 853px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.projects-subtitle {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.projects-title {
+  margin-bottom: 14px;
+}
+
+.projects-text {
+  line-height: 1.46;
+}
+
+.projects-cards-box {
+  font-size: 0;
+}
+
+.cards-box-top {
+  margin-bottom: 60px;
+}
+
+.projects-card {
+  max-width: 384px;
+  width: 100%;
+  display: inline-block;
+  margin-right: 34px;
+}
+
+.card-last {
+  margin-right: 0;
+}
+
+.card-bg {
+  height: 501px;
+  margin-bottom: 24px;
+}
+
+.card-bg-financial {
+  background: url(../img/projects/img-1.jpg) top / cover no-repeat;
+}
+
+.card-bg-marketing {
+  background: url(../img/projects/img-2.jpg) top / cover no-repeat;
+}
+
+.card-bg-business {
+  background: url(../img/projects/img-3.jpg) top / cover no-repeat;
+}
+
+.card-bg-financial-1 {
+  background: url(../img/projects/img-4.jpg) top / cover no-repeat;
+}
+
+.card-bg-web {
+  background: url(../img/projects/img-5.jpg) top / cover no-repeat;
+}
+
+.card-bg-financial-2 {
+  background: url(../img/projects/img-6.jpg) top / cover no-repeat;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 10px;
+}
+
+.card-date {
+  font-size: 14px;
+  line-height: 1.46;
+  padding-left: 25px;
+  background: url(../img/projects/icon-date.png) no-repeat;
+  min-height: 22px;
+  font-size: 14px;
+}
+
+/* ------------------------------------------------------- */
+
+.footer {
+  padding-bottom: 50px;
+}
+
+.footer p {
+  text-align: center;
+}
