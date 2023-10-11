@@ -1,0 +1,629 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+.header-title {
+  font-family: "DM Serif Text", serif;
+  font-size: 55px;
+  color: #cecece;
+  text-align: center;
+  padding: 40px 0;
+  text-shadow: 5px 6px 7px #0e333d;
+  line-height: 1.2;
+  box-shadow: inset 0px 0px 40px 40px rgba(150, 146, 146, 0.1);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+
+/*----------------------------- Макет текстовий consulting -----------------------------*/
+
+.consulting {
+  padding: 50px 0 45px;
+}
+
+.consulting-container {
+  max-width: 722px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.consulting-container > *:last-child,
+.benefits-content > *:last-child,
+.plan-container > *:last-child,
+.plan-content-box > *:last-child,
+.work-content-box > *:last-child,
+.work-container > *:last-child,
+.jewels-card-box > *:last-child,
+.jewels-card-link > *:last-child {
+  margin-bottom: 0;
+}
+
+.consulting-container > * {
+  margin-bottom: 15px;
+}
+
+.benefits-bg,
+.benefits-content,
+.benefits-item::before,
+.plan-content-title::before,
+.work-card-box,
+.jewels-title,
+.jewels-cards-box,
+.jewels-card-price-before p::before,
+.jewels-card-box,
+.jewels-title::after {
+  display: inline-block;
+}
+
+.consulting-image-bg {
+  max-width: 692px;
+  width: 100%;
+  height: 454px;
+  background: url(../img/consulting/consulting-bg.jpg) top / cover no-repeat;
+  margin-bottom: 37px;
+}
+
+.consulting-title,
+.consulting-subtitle,
+.benefits-title,
+.benefits-subtitle,
+.plan-title,
+.plan-content-title,
+.work-title,
+.work-content-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.27;
+  color: #37393f;
+}
+
+.consulting-title,
+.plan-title,
+.plan-decor-subtitle,
+.plan-content-title,
+.plan-btn,
+.work-decor-subtitle,
+.work-title,
+.work-content-title,
+.work-content-link,
+.jewels-title {
+  text-transform: capitalize;
+}
+
+.consulting-title {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.consulting-text {
+  line-height: 1.46;
+  margin-bottom: 45px;
+}
+
+.consulting-text p:not(:last-child),
+.plan-content-text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.consulting-subtitle {
+  font-size: 20px;
+  color: #6b77e5;
+  margin-bottom: 15px;
+}
+
+.benefits-box {
+  font-size: 0;
+  margin-bottom: 50px;
+}
+
+.benefits-bg {
+  max-width: 330px;
+  width: 100%;
+  height: 262px;
+  background: url(../img/consulting/benefits-bg.jpg) top left / cover no-repeat;
+  margin-right: 30px;
+  vertical-align: top;
+}
+
+.benefits-content {
+  max-width: 332px;
+}
+
+.benefits-title {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.benefits-subtitle {
+  color: #40ddb6;
+  font-size: 20px;
+  margin-bottom: 21px;
+}
+
+.benefits-list {
+  font-size: 18px;
+  margin-bottom: 21px;
+}
+
+.benefits-item {
+  line-height: 1.2;
+}
+
+.benefits-item::before,
+.plan-content-title::before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  background: url(../img/consulting/decor.jpg) center / cover no-repeat;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.benefits-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.footer {
+  padding: 50px 0;
+  text-align: center;
+}
+
+/*----------------------------- Макет текстовий plan -----------------------------*/
+
+.plan {
+  padding: 150px 0 40px;
+}
+
+.plan-container {
+  max-width: 703px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.plan-container > *,
+.work-container > * {
+  margin-bottom: 40px;
+}
+
+.plan-decor-subtitle,
+.work-decor-subtitle {
+  color: #37393f;
+  font-weight: 500;
+  margin-bottom: 16px;
+  line-height: normal;
+}
+
+.plan-decor-subtitle::before,
+.work-decor-subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+  margin-right: 6px;
+}
+
+.plan-title,
+.work-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+}
+
+.plan-title {
+  max-width: 420px;
+  margin-bottom: 10px;
+}
+
+.plan-text {
+  line-height: 1.46;
+  margin-bottom: 48px;
+}
+
+.plan-text p:not(:last-child),
+.work-content-text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.plan-content-box {
+  padding: 28px 41px 28px 38px;
+  border: 1px solid #e3e3e3;
+}
+
+.plan-content-box {
+  margin-bottom: 31px;
+}
+
+.plan-content-box:last-of-type {
+  margin-bottom: 48px;
+}
+
+.plan-content-box:last-child {
+  margin-bottom: 0;
+}
+
+.plan-content-box > * {
+  margin-bottom: 20px;
+}
+
+.plan-content-box > *:not(.plan-content-title) {
+  padding-left: 47px;
+}
+
+.plan-content-title {
+  font-size: 20px;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.plan-content-title::before {
+  margin-right: 19px;
+}
+
+.plan-content-text {
+  line-height: 1.46;
+}
+
+.plan-btn {
+  padding: 21px 35px 22px;
+  line-height: normal;
+  font-weight: 600;
+  background-color: #6977f3;
+  color: #fff;
+}
+
+.plan-btn:hover {
+  background-color: rgb(77, 87, 230);
+}
+
+/* ----------------------work----------------------------*/
+
+.work {
+  padding: 150px 0 138px;
+}
+
+.work-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.work-card-box::before {
+  content: "";
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  margin-bottom: -36px;
+}
+
+.work-card-box:nth-child(1)::before {
+  background: url(../img/work/icon-1.png) top / cover no-repeat;
+}
+.work-card-box:nth-child(2)::before {
+  background: url(../img/work/icon-2.png) top / cover no-repeat;
+}
+.work-card-box:nth-child(3)::before {
+  background: url(../img/work/icon-3.png) top / cover no-repeat;
+}
+
+.work-decor-subtitle {
+  margin-bottom: 16px;
+}
+
+.work-decor-subtitle,
+.work-title,
+.work-content-box {
+  text-align: center;
+}
+
+.work-title {
+  margin-bottom: 41px;
+}
+
+.work-cards {
+  font-size: 0;
+}
+
+.work-card-box {
+  max-width: 386px;
+  width: 100%;
+  text-align: center;
+  vertical-align: top;
+}
+
+.work-card-box:not(:last-child) {
+  margin-right: 31px;
+}
+
+.work-content-box > * {
+  margin-bottom: 20px;
+}
+
+.work-content-box {
+  padding: 58px 43px;
+  background: #f4f4f4;
+}
+
+.work-content-title {
+  font-size: 25px;
+  margin-bottom: 16px;
+}
+
+.work-content-text {
+  font-size: 18px;
+  line-height: 1.46;
+  margin-bottom: 37px;
+}
+
+.work-content-link {
+  color: #6b77e5;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 18px;
+}
+
+.work-content-link:hover::before {
+  display: inline-block;
+  content: "";
+  width: 110px;
+  height: 4px;
+  background-color: #40ddb6;
+  margin-right: -110px;
+  margin-bottom: -7px;
+}
+
+/* ---------------------------jewels-------------------------------- */
+
+.jewels {
+  padding: 160px 0;
+}
+
+.jewels-container {
+  max-width: 1244px;
+  padding: 0 15px;
+  margin: 0 auto;
+  font-family: "Cormorant Infant", serif;
+  font-size: 0;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #000;
+}
+
+.jewels-title {
+  max-width: 462px;
+  font-size: 60px;
+  line-height: 1.15;
+  vertical-align: top;
+  padding-top: 146px;
+  margin-right: 19px;
+}
+
+.jewels-title::after {
+  content: "";
+  width: 66%;
+  height: 3px;
+  background-color: #78473b;
+  margin-bottom: 40px;
+}
+
+.jewels-cards-box {
+  max-width: 732px;
+  width: 100%;
+  font-size: 0px;
+}
+
+.jewels-card-box {
+  max-width: 344px;
+  width: 100%;
+  vertical-align: top;
+  font-size: 24px;
+}
+
+.jewels-card-link {
+  display: block;
+}
+
+.jewels-card-link > * {
+  margin-bottom: 25px;
+}
+
+.jewels-card-box:not(:last-child) {
+  margin-right: 44px;
+}
+
+.jewels-card-box > * {
+  margin-bottom: 30px;
+}
+
+.jewels-card-box:first-child {
+  padding-top: 41px;
+}
+
+.jewels-image {
+  max-width: 344px;
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.jewels-card-box img {
+  max-width: 334px;
+  width: 100%;
+  box-shadow:
+    -9px -9px 0 0 #fff,
+    -9px -9px 0px 1px #000;
+}
+
+.jewels-card-subtitle {
+  margin-bottom: 4px;
+}
+
+.jewels-card-price p:not(:last-child),
+.jewels-card-price-before p:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.jewels-card-price-before p::before {
+  content: "$";
+  width: 14px;
+  height: 34px;
+}
+
+.jewels-card-title {
+  font-size: 46px;
+  line-height: 1.13;
+  margin-bottom: 40px;
+  text-transform: lowercase;
+}
+
+/* -------------------------game---------------------------------- */
+
+.game-title {
+  font-family: "DM Serif Text", serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #6977f3;
+}
+
+.game-box {
+  width: 800px;
+  height: 750px;
+  background-color: #e3e3e3;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.game-box > :not(.line10) {
+  background-color: #61b1c7;
+}
+
+.game-box p {
+  font-size: 50px;
+  text-align: center;
+  color: rgb(0, 17, 255);
+}
+
+.line2,
+.line3,
+.line4,
+.line7,
+.line8,
+.line9,
+.line10 {
+  overflow: hidden;
+}
+
+.line1 {
+  width: 50px;
+  height: 50px;
+}
+
+.line2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 47%;
+}
+
+.line3 {
+  width: 500px;
+  height: 50px;
+  border-radius: 7% 93% 8% 92% / 48% 48% 52% 52%;
+}
+
+.line4 {
+  width: 20px;
+  height: 200px;
+  margin-left: 450px;
+  border-radius: 56% 44% 15% 85% / 0% 55% 45% 100%;
+}
+
+.line5 {
+  width: 300px;
+  height: 30px;
+  margin-left: 450px;
+}
+
+.line6 {
+  width: 30px;
+  height: 50px;
+  margin-left: 720px;
+}
+
+.line7 {
+  width: 400px;
+  height: 40px;
+  border-radius: 11% 89% 96% 3% / 65% 0% 100% 35%;
+  margin-left: 350px;
+}
+
+.line8 {
+  width: 15px;
+  height: 100px;
+  margin-left: 350px;
+  border-radius: 100% 0% 100% 0% / 43% 36% 64% 57%;
+}
+
+.line9 {
+  width: 15px;
+  height: 100px;
+  margin-left: 350px;
+  border-radius: 0% 100% 47% 53% / 43% 36% 64% 57%;
+}
+
+.line10 {
+  width: 15px;
+  height: 15px;
+  margin-left: 350px;
+  border-radius: 47%;
+  background-color: red;
+}
+
+.line11 {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-family: "DM Serif Text", serif;
+  font-size: 55px;
+  color: #40ddb6;
+}
+
+.line2,
+.line3,
+.line4,
+.line5,
+.line6,
+.line7,
+.line8,
+.line9,
+.line10,
+.line11 {
+  visibility: hidden;
+}
+
+.line1:hover,
+.line1:hover ~ .line2,
+.line2:hover,
+.line2:hover ~ .line3,
+.line3:hover,
+.line3:hover ~ .line4,
+.line4:hover,
+.line4:hover ~ .line5,
+.line5:hover,
+.line5:hover ~ .line6,
+.line6:hover,
+.line6:hover ~ .line7,
+.line7:hover,
+.line7:hover ~ .line8,
+.line8:hover,
+.line8:hover ~ .line9,
+.line9:hover,
+.line9:hover ~ .line10,
+.line10:hover,
+.line10:hover ~ .line11,
+.line11:hover {
+  visibility: visible;
+}
