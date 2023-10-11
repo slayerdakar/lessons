@@ -35,9 +35,6 @@ body {
 .benefits-content > *:last-child,
 .plan-container > *:last-child,
 .plan-content-box > *:last-child,
-.plan-content-box:last-child,
-.plan-decor-subtitle::before,
-.work-decor-subtitle::before,
 .work-content-box > *:last-child,
 .work-container > *:last-child,
 .jewels-card-box > *:last-child,
@@ -245,6 +242,10 @@ body {
 
 .plan-content-box:last-of-type {
   margin-bottom: 48px;
+}
+
+.plan-content-box:last-child {
+  margin-bottom: 0;
 }
 
 .plan-content-box > * {
