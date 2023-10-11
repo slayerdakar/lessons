@@ -487,6 +487,7 @@ body {
   margin-bottom: 30px;
   text-align: center;
   color: #6977f3;
+  line-height: 1.2;
 }
 
 .game-box {
@@ -587,8 +588,9 @@ body {
   height: 60px;
   text-align: center;
   font-family: "DM Serif Text", serif;
-  font-size: 55px;
+  font-size: 40px;
   color: #40ddb6;
+  line-height: 1.4;
 }
 
 .line2,
