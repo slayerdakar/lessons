@@ -35,6 +35,9 @@ body {
 .benefits-content > *:last-child,
 .plan-container > *:last-child,
 .plan-content-box > *:last-child,
+.plan-content-box:last-child,
+.plan-decor-subtitle::before,
+.work-decor-subtitle::before,
 .work-content-box > *:last-child,
 .work-container > *:last-child,
 .jewels-card-box > *:last-child,
@@ -50,8 +53,12 @@ body {
 .benefits-content,
 .benefits-item::before,
 .plan-content-title::before,
+.plan-decor-subtitle::before,
+.work-decor-subtitle::before,
 .work-card-box,
-.jewels-title,
+.work-card-box::before,
+.work-content-link:hover::before,
+.jewels-title-box,
 .jewels-cards-box,
 .jewels-card-price-before p::before,
 .jewels-card-box,
@@ -200,7 +207,6 @@ body {
 .plan-decor-subtitle::before,
 .work-decor-subtitle::before {
   content: "";
-  display: inline-block;
   width: 12px;
   height: 12px;
   background-color: #40ddb6;
@@ -240,10 +246,6 @@ body {
 
 .plan-content-box:last-of-type {
   margin-bottom: 48px;
-}
-
-.plan-content-box:last-child {
-  margin-bottom: 0;
 }
 
 .plan-content-box > * {
@@ -294,7 +296,6 @@ body {
 
 .work-card-box::before {
   content: "";
-  display: inline-block;
   width: 72px;
   height: 72px;
   margin-bottom: -36px;
@@ -367,7 +368,6 @@ body {
 }
 
 .work-content-link:hover::before {
-  display: inline-block;
   content: "";
   width: 110px;
   height: 4px;
@@ -393,13 +393,16 @@ body {
   color: #000;
 }
 
-.jewels-title {
+.jewels-title-box {
   max-width: 462px;
+  margin-right: 19px;
+  padding-top: 146px;
+  vertical-align: top;
+}
+
+.jewels-title {
   font-size: 60px;
   line-height: 1.15;
-  vertical-align: top;
-  padding-top: 146px;
-  margin-right: 19px;
 }
 
 .jewels-title::after {
