@@ -61,8 +61,7 @@ body {
 .jewels-title-box,
 .jewels-cards-box,
 .jewels-card-price-before p::before,
-.jewels-card-box,
-.jewels-title::after {
+.jewels-card-box {
   display: inline-block;
 }
 
@@ -405,12 +404,18 @@ body {
   line-height: 1.15;
 }
 
+.test-1 {
+  font-size: 60px;
+  line-height: 1.15;
+}
+
 .jewels-title::after {
   content: "";
+  display: block;
   width: 66%;
   height: 3px;
   background-color: #78473b;
-  margin-bottom: 40px;
+  margin-top: 13px;
 }
 
 .jewels-cards-box {
