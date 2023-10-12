@@ -61,10 +61,11 @@ body {
   display: inline-block;
 }
 
-.consulting-image-bg {
+.consulting-image-img {
   max-width: 692px;
   width: 100%;
   margin-bottom: 37px;
+  display: block;
 }
 
 .consulting-title,
@@ -120,7 +121,7 @@ body {
   margin-bottom: 50px;
 }
 
-.benefits-bg {
+.benefits-img {
   max-width: 330px;
   width: 100%;
   margin-right: 30px;
