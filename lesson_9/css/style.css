@@ -402,10 +402,6 @@ body {
   margin-top: 13px;
 }
 
-.jewels-card-link {
-  transition: 0.8s;
-}
-
 .jewels-card-link:hover {
   transform: scale(1.05);
 }
@@ -463,6 +459,13 @@ body {
 
 .jewels-card-subtitle {
   margin-bottom: 4px;
+}
+
+.jewels-card-link,
+.jewels-card-subtitle,
+.jewels-card-price,
+.jewels-card-price-before {
+  transition: 0.8s;
 }
 
 .jewels-card-price p:not(:last-child),
