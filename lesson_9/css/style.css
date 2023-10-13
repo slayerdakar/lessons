@@ -484,6 +484,7 @@ body {
   line-height: 1.13;
   margin-bottom: 40px;
   text-transform: lowercase;
+  display: block;
 }
 
 /* -------------------------game---------------------------------- */
