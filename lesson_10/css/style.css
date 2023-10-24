@@ -1,0 +1,96 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+.header-title {
+  font-family: "DM Serif Text", serif;
+  font-size: 55px;
+  color: #cecece;
+  text-align: center;
+  padding: 40px 0;
+  text-shadow: 5px 6px 7px #0e333d;
+  line-height: 1.2;
+  box-shadow: inset 0px 0px 40px 40px rgba(150, 146, 146, 0.1);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+
+.main {
+  padding: 40px 0;
+}
+
+.main img {
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.business,
+.header-top-main {
+  background-color: #37393f;
+  color: white;
+}
+
+.header-top-main p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.header-top-main,
+.header-main,
+.business,
+.plan,
+.partners,
+.solutions,
+.why-me {
+  padding: 15px;
+}
+
+.business p:not(:last-child),
+.plan p:not(:last-child),
+.partners p:not(:last-child),
+.solutions p:not(:last-child),
+.why-me p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.business p:first-child:before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url("../img/business/business-arrow.svg") calc(50% + 3px) 50% / 12px 20px no-repeat;
+  border-radius: 50%;
+  background-color: #6b77e5;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.business p img,
+.plan p:first-child img,
+.why-me p:last-child img {
+  width: 100%;
+}
+
+.business p img {
+  max-width: 900px;
+}
+
+.plan p:first-child img {
+  max-width: 408px;
+}
+
+.why-me p:last-child img {
+  max-width: 868px;
+}
+
+.footer {
+  padding: 50px 0;
+  text-align: center;
+}
