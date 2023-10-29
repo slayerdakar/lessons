@@ -2,13 +2,13 @@
 
 @import url("reset.css");
 
-.container {
+[class*="__container"] {
   max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.header-title {
+.title-header {
   font-family: "DM Serif Text", serif;
   font-size: 55px;
   color: #cecece;
