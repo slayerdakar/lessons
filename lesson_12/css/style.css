@@ -320,7 +320,6 @@ body {
   width: 25px;
   height: 25px;
   max-width: 100%;
-  transition: all 0.3s;
 }
 
 .card-team__info {
