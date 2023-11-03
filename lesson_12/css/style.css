@@ -91,7 +91,7 @@ body {
   width: 10px;
   height: 7px;
   background: url(../img/icon/arrow-menu.svg) center / cover no-repeat;
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 
 .menu__item:hover .menu__link,
@@ -116,7 +116,6 @@ body {
 .menu__item:hover .menu-level1,
 .menu-level1__item:hover .menu-level2 {
   visibility: visible;
-  opacity: 1;
 }
 
 .btn {
@@ -148,8 +147,6 @@ body {
   padding-top: 5px;
   visibility: hidden;
   border-radius: 5px;
-  transition: all 0.3s;
-  opacity: 0;
 }
 
 .menu-level1::before {
@@ -168,7 +165,6 @@ body {
 .menu-level1__item {
   position: relative;
   border-radius: 5px;
-  transition: all 0.3s;
 }
 
 .menu-level1__item:not(:last-child) {
@@ -177,7 +173,6 @@ body {
 
 .menu-level1__item:hover .menu-level1__link::after {
   transform: rotate(-90deg);
-  transition: all 0.3s;
 }
 
 .menu-level1__link {
@@ -195,7 +190,6 @@ body {
   width: 10px;
   height: 7px;
   background: url(../img/icon/arrow-menu.svg) center / cover no-repeat;
-  transition: all 0.3s;
 }
 
 .menu-level2 {
@@ -206,14 +200,11 @@ body {
   visibility: hidden;
   background-color: #6b77e5;
   border-radius: 5px;
-  transition: all 0.3s;
-  opacity: 0;
 }
 
 .menu-level2__item {
   position: relative;
   border-radius: 5px;
-  transition: all 0.3s;
 }
 
 .menu-level2__item:not(:last-child) {
