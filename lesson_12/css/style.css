@@ -283,7 +283,7 @@ body {
 .social-card__link {
   position: relative;
   border-radius: 50%;
-  overflow: clip;
+  overflow: hidden;
 }
 
 .social-card__link::before {
@@ -418,7 +418,7 @@ body {
 }
 
 .social-card__link {
-  overflow: clip;
+  overflow: hidden;
   border-radius: 50%;
 }
 
