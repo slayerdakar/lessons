@@ -23,24 +23,24 @@ body {
   padding-top: 30px;
 }
 
-.text p {
+.practice__text p {
   padding: 20px;
   background-color: #bfc8e2;
 }
 
-.text > *:not(:last-child) {
+.practice__text > *:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.text:not(:last-child) {
+.practice__text:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.body {
+.body-practice {
   font-size: 0;
 }
 
-.side {
+.body-practice img {
   width: 160px;
   display: inline-block;
   vertical-align: top;
@@ -48,11 +48,7 @@ body {
   top: 125px;
 }
 
-.side img {
-  max-width: 100%;
-}
-
-.content {
+.body-practice__content {
   max-width: 1060px;
   display: inline-block;
   font-size: 18px;
