@@ -275,6 +275,8 @@ body {
 .card-team {
   display: inline-block;
   max-width: 386px;
+  min-height: 532px;
+  width: 100%;
   text-align: center;
   position: relative;
 }
