@@ -313,7 +313,8 @@ body {
 .card-team__social {
   position: absolute;
   top: 45%;
-  left: 28%;
+  left: 0;
+  width: 100%;
   visibility: hidden;
   opacity: 0;
   z-index: 2;
