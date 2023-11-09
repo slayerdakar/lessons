@@ -45,6 +45,7 @@
 .car-body-top {
   width: 670px;
   height: 140px;
+  font-size: 0;
 }
 
 .car-body-top--position {
@@ -225,7 +226,7 @@
   margin-right: 3px;
 }
 
-.car-middle__hood-inner {
+.hood-car {
   display: inline-block;
   width: 180px;
   height: 20px;
@@ -234,7 +235,7 @@
   position: relative;
 }
 
-.car-middle__hood-inner::before {
+.hood-car::before {
   content: "";
   width: 171px;
   height: 171px;
@@ -245,11 +246,11 @@
   border-radius: 50%;
 }
 
-.car-middle__hood-inner:hover .hood {
+.hood-car:hover .hood-car__item {
   transform: rotate(50deg);
 }
 
-.hood {
+.hood-car__item {
   width: 100%;
   height: 100%;
   background-color: #6b82f2;
@@ -267,7 +268,7 @@
   background-color: #6b82f2;
 }
 
-.car-middle__trunk-inner {
+.trunk-car {
   width: 304px;
   height: 20px;
   display: inline-block;
@@ -276,7 +277,7 @@
   position: relative;
 }
 
-.car-middle__trunk-inner::before {
+.trunk-car::before {
   content: "";
   width: 100px;
   height: 100px;
@@ -286,11 +287,11 @@
   background: url("../img/motor.webp") center / cover no-repeat;
 }
 
-.car-middle__trunk-inner:hover .trunk {
+.trunk-car:hover .trunk-car__item {
   transform: rotate(-30deg);
 }
 
-.trunk {
+.trunk-car__item {
   transform-origin: 0 0;
   width: 100%;
   height: 100%;
@@ -301,7 +302,7 @@
   pointer-events: none;
 }
 
-.trunk::before {
+.trunk-car__item::before {
   content: "";
   width: 9px;
   height: 18px;
@@ -312,7 +313,7 @@
   border-radius: 0% 100% 5px 100% / 0% 0% 100% 100%;
 }
 
-.trunk::after {
+.trunk-car__item::after {
   content: "";
   width: 5px;
   height: 30px;
@@ -377,33 +378,20 @@
     url("../img/dekor-9.webp") 455px 15px / 40px 20px no-repeat;
 }
 
-.front-fender {
+.front-fender__item {
   width: 293px;
   height: 143px;
   background-color: #6c82ef;
   border-radius: 76% 24% 0% 100% / 100% 55% 45% 0%;
 }
 
-.front-fender--position {
+.fender__front {
   position: absolute;
   bottom: 0;
   right: 47px;
 }
 
-.front-fender-shadow {
-  width: 231px;
-  height: 124px;
-  background-color: #070906;
-  border-radius: 78% 22% 0% 100% / 100% 39% 61% 0%;
-}
-
-.front-fender-shadow--position {
-  position: absolute;
-  bottom: 0;
-  right: 77px;
-}
-
-.back-fender {
+.back-fender__item {
   width: 290px;
   height: 100px;
   background-color: transparent;
@@ -416,14 +404,27 @@
   transform: rotate(4deg);
 }
 
-.back-fender--position {
+.fender__back {
   position: absolute;
   bottom: 0px;
   left: 150px;
   z-index: 2;
 }
 
-.back-fender-shadow {
+.front-shadow-fender__item {
+  width: 231px;
+  height: 124px;
+  background-color: #070906;
+  border-radius: 78% 22% 0% 100% / 100% 39% 61% 0%;
+}
+
+.fender-shadow__front {
+  position: absolute;
+  bottom: 0;
+  right: 77px;
+}
+
+.back-shadow-fender__item {
   width: 248px;
   height: 72px;
   background-color: #070906;
@@ -432,13 +433,14 @@
   transform: rotate(4deg);
 }
 
-.back-fender-shadow--position {
+.fender-shadow__back {
   position: absolute;
   left: 163px;
   bottom: 1px;
 }
 
-.bumper {
+.front-bumper__item,
+.back-bumper__item {
   width: 79px;
   height: 73px;
   background-color: #e7dddb;
@@ -446,31 +448,14 @@
   box-shadow: inset 0px -20px 1px -3px #b5b0ac;
 }
 
-.bumper--back {
-  position: absolute;
-  bottom: 35px;
-  left: -47px;
-}
-
-.bumper--back::before {
-  content: "";
-  width: 55px;
-  height: 55px;
-  position: absolute;
-  bottom: 17px;
-  right: 12px;
-  background: url("../img/dekor-4.webp") 0 0 / cover no-repeat;
-  transform: scale(-1, 1);
-}
-
-.bumper--front {
+.bumper__front {
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 2;
 }
 
-.bumper--front::before {
+.front-bumper::before {
   content: "";
   width: 70px;
   height: 70px;
@@ -481,53 +466,76 @@
   transform: scale(-1, 1);
 }
 
-.door-decor {
+.bumper__back {
+  position: absolute;
+  bottom: 35px;
+  left: -47px;
+}
+
+.back-bumper::before {
+  content: "";
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  bottom: 17px;
+  right: 12px;
+  background: url("../img/dekor-4.webp") 0 0 / cover no-repeat;
+  transform: scale(-1, 1);
+}
+
+.front-decor-door__item,
+.back-decor-door__item {
   width: 0;
   height: 88px;
   border-bottom: 50px solid transparent;
   border-left: 195px solid #2836d5;
 }
 
-.door-decor--back {
+.door-decor__front {
   position: absolute;
   top: 0;
   left: 390px;
 }
 
-.door-decor--front {
+.door-decor__back {
   position: absolute;
   top: 0;
   right: 355px;
 }
 
-.handle {
+.front-handle,
+.back-handle {
+  cursor: pointer;
+}
+
+.front-handle__item,
+.back-handle__item {
   width: 58px;
   height: 18px;
   background-color: #f0c2c2;
   border-radius: 5px;
   box-shadow: inset 0px -10px 0px -3px #3e27b6;
   transition: all 0.3s;
-  cursor: pointer;
   transform-origin: 0 0;
 }
 
-.handle--back {
-  position: absolute;
-  top: 14px;
-  left: 397px;
-}
-
-.handle--back:hover {
-  transform: rotateX(60deg);
-}
-
-.handle--front {
+.handle__front {
   position: absolute;
   top: 14px;
   right: 485px;
 }
 
-.handle--front:hover {
+.front-handle:hover .front-handle__item {
+  transform: rotateX(60deg);
+}
+
+.handle__back {
+  position: absolute;
+  top: 14px;
+  left: 397px;
+}
+
+.back-handle:hover .back-handle__item {
   transform: rotateX(60deg);
 }
 
@@ -588,6 +596,7 @@
 .back-light:hover {
   box-shadow: -28px 0px 67px 35px #a50811;
 }
+
 .fuel-cap {
   width: 44px;
   height: 38px;
