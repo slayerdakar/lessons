@@ -46,7 +46,7 @@ body {
 .car-body {
   display: inline-block;
   width: 1260px;
-  height: 445px;
+  min-height: 445px;
   padding: 0 50px 0 50px;
 }
 
@@ -54,10 +54,10 @@ body {
   width: 670px;
   height: 140px;
   font-size: 0;
+  position: relative;
 }
 
 .car-top--position {
-  position: relative;
   left: 183px;
 }
 
@@ -103,6 +103,8 @@ body {
 }
 
 .driver-window {
+  display: inline-block;
+  position: relative;
   border-radius: 66% 34% 100% 0% / 0% 93% 0% 100%;
   background-color: transparent;
   border: 6px solid #1b1818;
@@ -149,7 +151,7 @@ body {
 
 .driver-window__item::before,
 .passenger-window__item::before,
-.window-back::before {
+.back-window::before {
   content: "";
   width: 17px;
   height: 115px;
@@ -163,7 +165,7 @@ body {
 
 .driver-window__item::after,
 .passenger-window__item::after,
-.window-back::after {
+.back-window::after {
   content: "";
   width: 50px;
   height: 115px;
@@ -176,6 +178,7 @@ body {
 }
 
 .passenger-window {
+  display: inline-block;
   background-color: #61c9e6;
   border-radius: 30px 0 0 0;
   border: 6px solid #1b1818;
@@ -207,11 +210,12 @@ body {
   transition: all 0.3s;
 }
 
-.window-back {
+.back-window {
   width: 105px;
   height: 70px;
   border-radius: 100% 0% 57% 43% / 77% 100% 0% 23%;
   background-color: #61c9e6;
+  position: relative;
   overflow: hidden;
 }
 
@@ -228,6 +232,7 @@ body {
   background-color: transparent;
   border-radius: 37px 30px 0 0;
   position: relative;
+  font-size: 0;
 }
 
 .car-middle > *:not(:last-child) {
@@ -269,10 +274,10 @@ body {
   pointer-events: none;
 }
 
-.car-middle__dekor {
+.dekor-middle-car {
   display: inline-block;
   width: 670px;
-  height: 100%;
+  height: 20px;
   background-color: #6b82f2;
 }
 
@@ -335,6 +340,7 @@ body {
 .car-body-bottom {
   display: inline-block;
   position: relative;
+  font-size: 0;
 }
 
 .car-body-bottom__left {
@@ -456,6 +462,12 @@ body {
   box-shadow: inset 0px -20px 1px -3px #b5b0ac;
 }
 
+.front-bumper,
+.back-bumper {
+  display: inline-block;
+  position: relative;
+}
+
 .bumper__front {
   position: absolute;
   bottom: 0;
@@ -560,6 +572,12 @@ body {
   top: 16px;
 }
 
+.front-light {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0;
+}
+
 .front-light--position {
   position: absolute;
   top: 0;
@@ -593,6 +611,7 @@ body {
   border-radius: 9px 7px 7px 9px;
   background-color: #a50811;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .back-light--position {
