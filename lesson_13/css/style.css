@@ -34,7 +34,7 @@ body {
   padding: 307px 0 235px 0;
   background:
     url("../img/dekor-bg-4.webp") center / 100% 100% no-repeat,
-    #1d353b;
+    #19191d;
   overflow-x: scroll;
 }
 
@@ -45,9 +45,9 @@ body {
 
 .car-body {
   display: inline-block;
-  width: 1240px;
-  height: 460px;
-  padding: 0 30px 0 50px;
+  width: 1260px;
+  height: 445px;
+  padding: 0 50px 0 50px;
 }
 
 .car-top {
@@ -250,7 +250,7 @@ body {
   position: absolute;
   bottom: -153px;
   left: 12px;
-  background-color: #000;
+  background-color: #282530;
   border-radius: 50%;
 }
 
