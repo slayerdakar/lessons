@@ -38,22 +38,23 @@
 
 .car-body {
   display: inline-block;
-  width: 1160px;
+  width: 1240px;
   height: 460px;
+  padding: 0 30px 0 50px;
 }
 
-.car-body-top {
+.car-top {
   width: 670px;
   height: 140px;
   font-size: 0;
 }
 
-.car-body-top--position {
+.car-top--position {
   position: relative;
   left: 183px;
 }
 
-.car-body-top__left {
+.car-top__left {
   display: inline-block;
   width: 385px;
   height: 140px;
@@ -63,7 +64,7 @@
   overflow: hidden;
 }
 
-.car-body-top__left::after {
+.car-top__left::after {
   content: "";
   width: 40px;
   height: 40px;
@@ -73,7 +74,7 @@
   background: url("../img/dekor-3.webp") 0 0 / cover no-repeat;
 }
 
-.car-body-top__right {
+.car-top__right {
   display: inline-block;
   width: 285px;
   height: 140px;
@@ -83,8 +84,8 @@
   overflow: hidden;
 }
 
-.car-body-top__left::before,
-.car-body-top__right::before {
+.car-top__left::before,
+.car-top__right::before {
   content: "";
   position: absolute;
   top: 0;
@@ -94,7 +95,7 @@
   background-color: #6b83f1;
 }
 
-.window-driver-inner {
+.driver-window {
   border-radius: 66% 34% 100% 0% / 0% 93% 0% 100%;
   background-color: transparent;
   border: 6px solid #1b1818;
@@ -105,13 +106,13 @@
   cursor: pointer;
 }
 
-.window-driver-inner--position {
+.car-top__window-driver {
   position: absolute;
   bottom: 0;
   right: 46px;
 }
 
-.window-driver-inner::before {
+.driver-window::before {
   content: "";
   width: 10px;
   height: 40px;
@@ -124,7 +125,7 @@
   border-radius: 10px 30px 0 0;
 }
 
-.window-driver {
+.driver-window__item {
   width: 184px;
   height: 92px;
   border-radius: 66% 34% 100% 0% / 0% 93% 0% 100%;
@@ -135,12 +136,12 @@
   transform: translate(0, 15px);
 }
 
-.window-driver-inner:hover .window-driver {
+.driver-window:hover .driver-window__item {
   transform: translate(0, 80px);
 }
 
-.window-driver::before,
-.window-passenger::before,
+.driver-window__item::before,
+.passenger-window__item::before,
 .window-back::before {
   content: "";
   width: 17px;
@@ -153,8 +154,8 @@
   transform: skewX(-30deg);
 }
 
-.window-driver::after,
-.window-passenger::after,
+.driver-window__item::after,
+.passenger-window__item::after,
 .window-back::after {
   content: "";
   width: 50px;
@@ -167,7 +168,7 @@
   transform: skewX(-30deg);
 }
 
-.window-passenger-inner {
+.passenger-window {
   background-color: #61c9e6;
   border-radius: 30px 0 0 0;
   border: 6px solid #1b1818;
@@ -179,17 +180,17 @@
   cursor: pointer;
 }
 
-.window-passenger-inner--position {
+.car-top__window-passenger {
   position: absolute;
   bottom: 0;
   right: 266px;
 }
 
-.window-passenger-inner:hover .window-passenger {
+.passenger-window:hover .passenger-window__item {
   transform: translate(0, 80px);
 }
 
-.window-passenger {
+.passenger-window__item {
   width: 187px;
   height: 93px;
   background-color: #61c9e6;
@@ -207,7 +208,7 @@
   overflow: hidden;
 }
 
-.window-back--position {
+.car-top__window-back {
   position: absolute;
   bottom: 16px;
   left: 76px;
