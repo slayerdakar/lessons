@@ -387,9 +387,9 @@ body {
   top: 0;
   right: 9px;
   background:
-    url("../img/dekor-7.webp") 620px 0 / 120px 86px no-repeat,
+    url("../img/dekor-7.webp") 676px 17px / 50px 50px no-repeat,
     url("../img/dekor-8.webp") -16px -40px / 470px 300px no-repeat,
-    url("../img/dekor-9.webp") 455px 15px / 40px 20px no-repeat;
+    url("../img/dekor-9.webp") 450px 3px / 50px 50px no-repeat;
 }
 
 .front-fender__item {
@@ -500,7 +500,6 @@ body {
   bottom: 17px;
   right: 12px;
   background: url("../img/dekor-4.webp") 0 0 / cover no-repeat;
-  transform: scale(-1, 1);
 }
 
 .front-decor-door__item,
