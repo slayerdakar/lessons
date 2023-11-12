@@ -294,15 +294,12 @@ body {
   bottom: 42px;
   right: 43px;
   background: url("../img/gear.webp") 0px 0px / cover no-repeat;
-  animation: gear 6s ease 72s;
+  animation: gear 1s linear 2 74s;
 }
 
 @keyframes gear {
-  0% {
-    transform: rotate(0);
-  }
   100% {
-    transform: rotate(1000deg);
+    transform: rotate(360deg);
   }
 }
 
