@@ -96,8 +96,12 @@ body {
 }
 
 @keyframes shop {
+  0% {
+    transform: translateX(0);
+  }
   100% {
     transform: translateX(-1000px);
+    visibility: hidden;
   }
 }
 
@@ -344,8 +348,12 @@ body {
 }
 
 @keyframes car-end {
+  0% {
+    transform: translateX(0px);
+  }
   100% {
     transform: translateX(2500px);
+    visibility: hidden;
   }
 }
 
@@ -713,7 +721,7 @@ body {
   background: url("../img/smoke.webp") 0 0 / contain no-repeat;
   transform: rotate(-90deg);
   visibility: hidden;
-  animation: smoke 2s ease 29s infinite;
+  animation: smoke 2s ease 31 29s;
 }
 
 @keyframes smoke {
