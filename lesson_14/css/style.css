@@ -306,24 +306,6 @@ body {
   }
 }
 
-.tation-img span {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  position: absolute;
-}
-
-.tation-img span::before {
-  content: "";
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: url("../img/gear-small.webp") 0 0 / cover no-repeat;
-}
-
 .car {
   font-size: 0;
   position: absolute;
