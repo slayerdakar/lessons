@@ -358,6 +358,7 @@ body {
 }
 
 .item-wishlist__price {
+  flex: 0 0 100px;
   color: #807d7e;
 }
 
