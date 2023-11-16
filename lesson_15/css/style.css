@@ -277,8 +277,9 @@ body {
 .product-men__link {
   flex: 0 0 18px;
   align-self: center;
-  min-height: 14px;
-  background: url("../img/icons/arrow-product.svg") center / cover no-repeat;
+  padding: 20px 0;
+  /* min-height: 14px; */
+  background: url("../img/icons/arrow-product.svg") center / contain no-repeat;
 }
 
 .wishlist {
