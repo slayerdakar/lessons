@@ -259,6 +259,7 @@ body {
 
 .product-men__title {
   flex-grow: 1;
+  padding-right: 5px;
 }
 
 .product-men__title:not(:last-child) {
