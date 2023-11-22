@@ -661,6 +661,10 @@ body {
   position: relative;
 }
 
+.body-payment-method-form__item--icon > .body-payment-method-form__input {
+  padding-right: 55px;
+}
+
 .body-payment-method-form__item--icon::before {
   content: "";
   position: absolute;
