@@ -550,9 +550,10 @@ body {
 }
 
 .shipping-address-form__label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   column-gap: 19px;
+  cursor: pointer;
 }
 
 .shipping-address-form__label::before,
@@ -616,6 +617,10 @@ body {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+}
+
+.payment-method-form__label {
+  cursor: pointer;
 }
 
 .payment-method-form__icon,
