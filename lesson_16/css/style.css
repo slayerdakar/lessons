@@ -92,7 +92,8 @@ body {
 }
 
 .info__subtitle:not(:last-child),
-.form-check-out__title:not(:last-child) {
+.form-check-out__title:not(:last-child),
+.form-contact__body:not(:last-child) {
   margin-bottom: 50px;
 }
 
@@ -163,7 +164,11 @@ body {
 .checkbox,
 .shipping-address-form__radio-box,
 .form-check-out__inner,
-.shipping-address-form__label {
+.shipping-address-form__label,
+.checkbox__label,
+.check-out__title,
+.payment-method-form__box-radio,
+.body-payment-method-form__item {
   position: relative;
 }
 
@@ -230,7 +235,6 @@ body {
   font-size: 20px;
   line-height: 1.2;
   color: #3c4242;
-  position: relative;
 }
 
 .checkbox__label::before,
@@ -352,10 +356,6 @@ body {
   border-radius: 0 !important;
 }
 
-.form-contact__body:not(:last-child) {
-  margin-bottom: 50px;
-}
-
 .form-contact__button {
   padding: 21px 61px 22px;
   background-color: #6b77e5;
@@ -378,7 +378,6 @@ body {
 
 .check-out__title {
   padding-left: 21px;
-  position: relative;
 }
 
 .check-out__title::before {
@@ -454,7 +453,6 @@ body {
   height: 49px;
   padding: 0 20px;
   font-size: 14px;
-  /* appearance: none; */
 }
 
 .form-check-out__select {
@@ -608,10 +606,6 @@ body {
   margin-bottom: 5px;
 }
 
-.payment-method-form__box-radio {
-  position: relative;
-}
-
 .payment-method-form__box-radio .payment-method-form__label::before {
   position: absolute;
   top: 50%;
@@ -627,6 +621,10 @@ body {
 .payment-method-form__body,
 .payment-method-form__box-radio {
   padding-left: 37px;
+}
+
+.payment-method-form__body {
+  padding-right: 25px;
 }
 
 .icon-card {
@@ -660,10 +658,6 @@ body {
 
 .body-payment-method-form__input {
   border: 1px solid #3c4242;
-}
-
-.body-payment-method-form__item {
-  position: relative;
 }
 
 .body-payment-method-form__item--icon > .body-payment-method-form__input {
