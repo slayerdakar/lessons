@@ -133,7 +133,8 @@ body {
 .form__inner-textarea:not(:last-child),
 .shipping-address-form__text:not(:last-child),
 .shipping-method-form__title:not(:last-child),
-.payment-method-form__item > *:not(:last-child) {
+.payment-method-form__item > *:not(:last-child),
+.payment-method-form__text:not(:last-child) {
   margin-bottom: 30px;
 }
 
