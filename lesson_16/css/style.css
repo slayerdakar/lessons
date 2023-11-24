@@ -93,7 +93,8 @@ body {
 
 .info__subtitle:not(:last-child),
 .form-check-out__title:not(:last-child),
-.form-contact__body:not(:last-child) {
+.form-contact__body:not(:last-child),
+.check-out__form-pay:not(:last-child) {
   margin-bottom: 50px;
 }
 
@@ -134,7 +135,8 @@ body {
 .shipping-address-form__text:not(:last-child),
 .shipping-method-form__title:not(:last-child),
 .payment-method-form__item > *:not(:last-child),
-.payment-method-form__text:not(:last-child) {
+.payment-method-form__text:not(:last-child),
+.form-pay-check-out > *:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -493,14 +495,6 @@ body {
 
 .form-pay-check-out {
   max-width: 840px;
-}
-
-.form-pay-check-out > *:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.form-pay-check-out__item:last-of-type {
-  margin-bottom: 50px;
 }
 
 .form-pay-check-out__item:not(:last-of-type) {
