@@ -171,7 +171,8 @@ body {
 .checkbox__label,
 .check-out__title,
 .payment-method-form__box-radio,
-.body-payment-method-form__item {
+.body-payment-method-form__item,
+.card-img {
   position: relative;
 }
 
@@ -207,7 +208,8 @@ body {
 
 .checkbox__input,
 .shipping-address-form__input,
-.payment-method-form__input {
+.payment-method-form__input,
+.card-img__input {
   position: absolute;
   top: 0;
   left: 0;
@@ -218,14 +220,20 @@ body {
 
 .checkbox__input:focus-visible + .checkbox__label,
 .shipping-address-form__input:focus-visible + .shipping-address-form__label,
-.payment-method-form__input:focus-visible + .payment-method-form__label {
+.payment-method-form__input:focus-visible + .payment-method-form__label,
+.card-img__input:focus-visible + .card-img__label {
   outline: 2px solid #333;
   border-radius: 2px;
 }
 
+.card-img__input:focus-visible + .card-img__label {
+  border-radius: 12px;
+}
+
 .checkbox__input:checked + .checkbox__label::after,
 .shipping-address-form__input:checked + .shipping-address-form__label::after,
-.payment-method-form__input:checked + .payment-method-form__label::after {
+.payment-method-form__input:checked + .payment-method-form__label::after,
+.card-img__input:checked + .card-img__label {
   visibility: visible;
   opacity: 1;
 }
@@ -612,7 +620,7 @@ body {
   cursor: pointer;
 }
 
-.payment-method-form__icon,
+.payment-method-form__img-card,
 .payment-method-form__body,
 .payment-method-form__box-radio {
   padding-left: 37px;
@@ -622,17 +630,42 @@ body {
   padding-right: 25px;
 }
 
-.icon-card {
+.card-img {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.icon-card img {
+.card-img__label > img {
   flex: 0 0 80px;
   height: 46px;
   border-radius: 12px;
   overflow: hidden;
+}
+
+.card-img__label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card-img__input:checked + .card-img__label::before {
+  background-color: #333;
+}
+
+.card-img__label {
+  position: relative;
+}
+
+.card-img__label::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  opacity: 0.2;
+  transition: all 0.3s;
 }
 
 .payment-method-form__item:not(:last-child) {
