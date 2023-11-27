@@ -636,16 +636,21 @@ body {
   flex-wrap: wrap;
 }
 
+.card-img__radio {
+}
+
 .card-img__label > img {
+  overflow: hidden;
   flex: 0 0 80px;
   height: 46px;
   border-radius: 12px;
-  overflow: hidden;
 }
 
 .card-img__label {
   display: inline-block;
   cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .card-img__input:checked + .card-img__label::before {
