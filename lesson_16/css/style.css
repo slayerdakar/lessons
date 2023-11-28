@@ -510,6 +510,10 @@ body {
   border-bottom: 1px solid #edeef2;
 }
 
+.form-pay-check-out__item:last-of-type {
+  margin-bottom: 0;
+}
+
 .shipping-address-form__title:not(:last-child),
 .payment-shipping-method__title:not(:last-child),
 .payment-method-form__title:not(:last-child) {
@@ -636,9 +640,6 @@ body {
   flex-wrap: wrap;
 }
 
-.card-img__radio {
-}
-
 .card-img__label > img {
   overflow: hidden;
   flex: 0 0 80px;
@@ -707,6 +708,10 @@ body {
   transform: translateY(-50%);
   background: url("../img/form/icon/eye-icon.svg") center / cover no-repeat;
   cursor: pointer;
+}
+
+.form-pay-check-out__button {
+  margin-top: 50px;
 }
 
 .footer p {
