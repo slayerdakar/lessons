@@ -60,9 +60,9 @@
                   <input class="form__input" required id="city" name="city" placeholder="Town / City" type="text">
                 </div>
                 <div class="form__item">
-                  <label>State*</label>
+                  <label for="state">State*</label>
                   <div class="form__inner-select">
-                    <select class="form__select" name="select" required>
+                    <select class="form__select" id="state" name="select" required>
                       <option value disabled selected hidden>State</option>
                       <option value="01">California</option>
                       <option value="02">Texas</option>
@@ -178,9 +178,9 @@
                   <input class="form-check-out__input" placeholder="Town / City" id="cit" name="cit" type="text">
                 </div>
                 <div class="form-check-out__item form-check-out__item--size">
-                  <label>State*</label>
+                  <label for="state-c">State*</label>
                   <div class="form-check-out__inner">
-                    <select class="form-check-out__select" name="select-check-out" required>
+                    <select class="form-check-out__select" id="state-c" name="select-check-out" required>
                       <option value disabled selected hidden>State</option>
                       <option value="01">California</option>
                       <option value="02">Texas</option>
@@ -262,13 +262,9 @@
                     <div class="payment-method-form__radio">
                       <input class="payment-method-form__input" checked id="01" name="method" value="credit"
                         type="radio">
-                      <label class="payment-method-form__label" for="01">Credit
-                        Card</label>
-                    </div>
-                    <div class="payment-method-form__text">
-                      <p>
-                        We accept all major credit cards.
-                      </p>
+                      <label class="payment-method-form__label" for="01"><span>Credit Card</span>
+                        <span class="payment-method-form__text-label"> We accept all major credit cards.</span>
+                      </label>
                     </div>
                   </div>
                   <fieldset class="payment-method-form__img-card card-img">
@@ -309,6 +305,8 @@
                     <div class="body-payment-method-form__item body-payment-method-form__item--icon">
                       <input class="body-payment-method-form__input" required placeholder="Security Code"
                         name="card-code" type="password">
+                      <button class="body-payment-method-form__btn-input">
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -317,12 +315,8 @@
                   <div class="payment-method-form__box-radio">
                     <div class="payment-method-form__radio">
                       <input class="payment-method-form__input" id="02" name="method" value="delivery" type="radio">
-                      <label class="payment-method-form__label" for="02">Cash on delivery</label>
-                    </div>
-                    <div class="payment-method-form__text">
-                      <p>
-                        Pay with cash upon delivery.
-                      </p>
+                      <label class="payment-method-form__label" for="02"><span>Cash on delivery</span><span
+                          class="payment-method-form__text-label"> We accept all major credit cards.</span></label>
                     </div>
                   </div>
                 </div>
@@ -339,7 +333,6 @@
             </div>
             <button class="form-pay-check-out__button button button--color" form="check-out-form-pay" type="submit">Pay
               Now</button>
-
           </form>
         </div>
       </div>
