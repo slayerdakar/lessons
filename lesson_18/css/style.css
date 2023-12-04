@@ -733,6 +733,9 @@ body {
     height: 56px;
     background-color: #fff;
   }
+  .hero-design__img-box {
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 820px) {
@@ -755,9 +758,6 @@ body {
   }
   .hero-design__content {
     flex: 0 1 auto;
-  }
-  .hero-design__img-box {
-    padding-right: 0;
   }
 }
 
