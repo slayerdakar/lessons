@@ -85,10 +85,8 @@ body {
   transition: color 0.3s;
 }
 
-@media (any-hover: hover) {
-  .menu__item:hover .menu__link {
-    text-decoration: underline;
-  }
+.menu__item:hover .menu__link {
+  text-decoration: underline;
 }
 
 .menu__item--active .menu__link,
@@ -120,18 +118,16 @@ body {
   transition: transform 0.3s;
 }
 
-@media (any-hover: hover) {
-  .menu__item--parent:hover .sub-menu,
-  .menu__item--parent-page:hover .sub-menu {
-    transform: translate(0, 0);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-  }
-  .menu__item--parent:hover .menu__link::after,
-  .menu__item--parent-page:hover .menu__link::after {
-    transform: rotate(-180deg);
-  }
+.menu__item--parent:hover .sub-menu,
+.menu__item--parent-page:hover .sub-menu {
+  transform: translate(0, 0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.menu__item--parent:hover .menu__link::after,
+.menu__item--parent-page:hover .menu__link::after {
+  transform: rotate(-180deg);
 }
 
 .sub-menu {
@@ -164,10 +160,8 @@ body {
   font-size: 18px;
 }
 
-@media (any-hover: hover) {
-  .sub-menu__link:hover {
-    text-decoration: underline;
-  }
+.sub-menu__link:hover {
+  text-decoration: underline;
 }
 
 .actions-header {
@@ -455,6 +449,7 @@ body {
   left: -8px;
   background-color: rgba(255, 255, 255, 0.06);
   transition: all 0.3s;
+  pointer-events: none;
 }
 
 @media (any-hover: hover) {
@@ -634,6 +629,7 @@ body {
 .hero-design__title {
   color: #0e333d;
   font-family: "DM Serif Text", serif;
+
   font-size: 78px;
   line-height: 1.27;
 }
