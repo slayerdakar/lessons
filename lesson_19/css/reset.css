@@ -6,10 +6,12 @@
 	border: 0;
 	box-sizing: border-box;
 }
+
 *::before,
 *::after {
 	display: inline-block;
 }
+
 a {
 	text-decoration: none;
 	color: inherit;
