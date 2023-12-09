@@ -350,6 +350,7 @@ body {
 }
 
 .card-savings--large {
+  display: grid;
   max-width: 610px;
   grid-template-columns: 0.5fr;
   justify-items: center;
@@ -619,12 +620,51 @@ body {
     margin-bottom: 20px;
   }
 
+  .savings__item,
+  .savings__item .card-savings__btn-label,
+  .savings__item .card-savings__content {
+    grid-template-columns: 1fr;
+    color: #fff;
+  }
+  .savings__item,
+  .savings__item.card-savings--content-right .card-savings__content,
+  .savings__item.card-savings--large .card-savings__btn-label {
+    justify-items: center;
+  }
+  .savings__item .card-savings__content {
+    text-align: center;
+  }
+
+  .savings__item .card-savings__box,
   .savings__item.card-savings--large {
     justify-content: center;
   }
+  .savings__item .card-savings__title:not(.card-savings--large .card-savings__title) {
+    max-width: 100%;
+  }
 
-  .savings__item.card-savings--large .card-savings__btn-label {
-    justify-items: center;
+  .savings__item.card-savings--padding-adapt {
+    padding-left: 20px;
+  }
+
+  .savings__item .card-savings__img-box::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #666b68;
+    opacity: 0.7;
+  }
+
+  .savings__item.card-savings--large .card-savings__btn,
+  .savings__item.card-savings--content-right-color .card-savings__btn {
+    border-color: #fff;
+  }
+
+  .savings__item.card-savings--btn-label {
+    align-content: space-evenly;
   }
 
   .savings__item img {
