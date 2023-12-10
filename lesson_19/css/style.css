@@ -515,10 +515,6 @@ body {
     padding: 70px 0;
   }
 
-  .cards-top__item {
-    padding-left: 10%;
-  }
-
   .cards-top__item .top-card__link {
     font-size: 24px;
   }
@@ -540,6 +536,10 @@ body {
 @media (max-width: 767.98px) {
   .cards-top__items {
     grid-template-columns: 1fr;
+  }
+
+  .cards-top__item {
+    padding-left: 10%;
   }
 
   .savings__item.card-savings {
@@ -608,11 +608,15 @@ body {
   }
 
   .cards-top__item .top-card__title {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .cards-top {
     padding: 50px 0;
+  }
+
+  .cards-top__item {
+    padding-left: 30px;
   }
 
   .cards-top__item {
