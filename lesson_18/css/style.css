@@ -20,6 +20,10 @@
   margin: 0 auto;
 }
 
+.menu-open body {
+  overflow: hidden;
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: #6d6d6d;
@@ -476,9 +480,9 @@ body {
   display: flex;
   align-self: stretch;
   flex-direction: column;
+  gap: 15px;
 }
 .content-hero__text {
-  flex-grow: 1;
   color: #fff;
   font-family: "Cormorant Infant", serif;
   font-size: 22px;
@@ -530,7 +534,8 @@ body {
   }
   .content-hero__item {
     align-self: flex-end;
-    margin-bottom: 183px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .hero__content {
     flex-basis: 31.625%;
