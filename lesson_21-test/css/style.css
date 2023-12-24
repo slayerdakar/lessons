@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:500&display=swap");
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/CoreSansC-55Medium.woff2") format("woff2"), url("../fonts/CoreSansC-55Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/CoreSansC-65Bold.woff2") format("woff2"), url("../fonts/CoreSansC-65Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/CoreSansC-75ExtraBold.woff2") format("woff2"), url("../fonts/CoreSansC-75ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Light.woff2") format("woff2"), url("../fonts/Causten-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Regular.woff2") format("woff2"), url("../fonts/Causten-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Medium.woff2") format("woff2"), url("../fonts/Causten-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Semi-Bold.woff2") format("woff2"), url("../fonts/Causten-Semi-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Bold.woff2") format("woff2"), url("../fonts/Causten-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+[class*=__container] {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Causten", sans-serif;
+  font-size: 14px;
+  color: #807d7e;
+}
+.menu-open body {
+  overflow: hidden;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.discount-cards {
+  padding: 130px 0 100px;
+}
+@media (max-width: 767.98px) {
+  .discount-cards {
+    padding: 80px 0 50px;
+  }
+}
+.discount-cards__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+@media (max-width: 767.98px) {
+  .discount-cards__items {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767.98px) {
+  .discount-cards__item.card-discount {
+    min-height: 300px;
+    max-width: 100%;
+    padding-left: 10%;
+  }
+}
+@media (max-width: 460px) {
+  .discount-cards__item.card-discount {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 460px) {
+  .discount-cards__item .card-discount__content {
+    max-width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 460px) {
+  .discount-cards__item .card-discount__img-box::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #1d1e1d;
+    opacity: 0.7;
+  }
+}
+@media (max-width: 460px) {
+  .discount-cards__item .card-discount__title {
+    font-size: 28px;
+  }
+}
+
+.card-discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 605px;
+  min-height: 356px;
+  position: relative;
+  padding: 20px 30px;
+  border-radius: 12px;
+  border: 1px solid #000;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: lightgray;
+}
+@media (any-hover: hover) {
+  .card-discount:hover {
+    -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  }
+}
+.card-discount__img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.card-discount__content {
+  position: relative;
+  max-width: 265px;
+  font-family: "Core Sans C", sans-serif;
+  color: #fff;
+  text-transform: capitalize;
+}
+.card-discount__content > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.card-discount__label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.67;
+  letter-spacing: 0.251px;
+}
+.card-discount__label:not(:last-child) {
+  margin-bottom: 24px;
+}
+.card-discount__title {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.32;
+}
+.card-discount__title:not(:last-child) {
+  margin-bottom: 9px;
+}
+.card-discount__sale {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: 0.251px;
+}
+.card-discount__sale:not(:last-child) {
+  margin-bottom: 30px;
+}
+.card-discount__link {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.51;
+}
+.card-discount__link span {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media (any-hover: hover) {
+  .card-discount__link:hover span {
+    border-color: transparent;
+  }
+}
+
+.footer p {
+  font-size: 30px;
+  text-align: center;
+  padding: 50px 0;
+  line-height: 1.2;
+  -webkit-box-shadow: inset 0px 0px 40px 40px rgba(150, 146, 146, 0.1);
+          box-shadow: inset 0px 0px 40px 40px rgba(150, 146, 146, 0.1);
+}
