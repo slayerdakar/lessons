@@ -1185,7 +1185,7 @@ body {
     z-index: 1;
   }
 }
-.card-saving.card-savings--btn-label .card-saving__btn-label {
+.card-saving.card-saving--btn-label .card-saving__btn-label {
   display: inline-block;
 }
 .card-saving--large .card-saving__btn-label {
