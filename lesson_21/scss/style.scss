@@ -63,7 +63,7 @@ $mobile: 539.98px;
     content: "";
     position: absolute;
     left: 0;
-    top: 4px;
+    top: 2px;
     width: 6px;
     height: 30px;
     @include borderRadiusCard();
@@ -363,6 +363,17 @@ $mobile: 539.98px;
   }
   @media (max-width: $mobile) {
     min-height: calc(100vh - 115px);
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: rgb(8 8 9 / 0.82);
+      opacity: 0.7;
+      z-index: 1;
+    }
   }
 
   img {
@@ -372,13 +383,14 @@ $mobile: 539.98px;
     top: 0;
     left: 0;
     object-fit: cover;
-    object-position: top;
+    object-position: 70% top;
   }
 
   &__container {
     position: relative;
     width: 100%;
     display: flex;
+    z-index: 2;
   }
 
   &__content {
@@ -392,6 +404,7 @@ $mobile: 539.98px;
     @media (max-width: 420px) {
       padding-right: 0;
       padding-left: 0;
+      text-align: center;
     }
   }
 
@@ -404,11 +417,10 @@ $mobile: 539.98px;
     @media (max-width: $tablet) {
       font-size: 28px;
     }
-    @media (max-width: $mobile) {
+    @media (max-width: 767.98px) {
       font-size: 24px;
     }
     @media (max-width: 420px) {
-      text-align: center;
       font-size: 22px;
     }
   }
@@ -422,11 +434,10 @@ $mobile: 539.98px;
     @media (max-width: $tablet) {
       font-size: 62px;
     }
-    @media (max-width: $mobile) {
-      font-size: 52px;
+    @media (max-width: 767.98px) {
+      font-size: 50px;
     }
-    @media (max-width: 420px) {
-      text-align: center;
+    @media (max-width: $mobile) {
       font-size: 44px;
     }
   }
@@ -440,7 +451,7 @@ $mobile: 539.98px;
       @media (max-width: $tablet) {
         font-size: 28px;
       }
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
         font-size: 24px;
       }
       @media (max-width: 420px) {
@@ -469,8 +480,6 @@ $mobile: 539.98px;
       &:hover {
         background-color: #cecece;
       }
-    }
-    @media (max-width: $tablet) {
     }
   }
 }
