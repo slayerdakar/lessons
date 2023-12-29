@@ -168,7 +168,6 @@ body {
   font-family: "Core Sans C", sans-serif;
   font-size: 34px;
   font-weight: 700;
-  line-height: 1.2;
   letter-spacing: 0.68px;
   padding-left: 26px;
   position: relative;
@@ -177,7 +176,7 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 0;
   width: 6px;
   height: 30px;
   border-radius: 10px;
