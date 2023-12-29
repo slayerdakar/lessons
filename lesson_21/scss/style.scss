@@ -242,9 +242,11 @@ $mobile: 539.98px;
   &__input {
     height: 44px;
     width: 100%;
+    font-size: 16px;
     @include borderRadiusCard(8px, #f6f6f6, hidden);
     padding: 0 10px 0 52px;
     &::placeholder {
+      line-height: 1.2;
       font-size: 16px;
     }
     @media (max-width: $mobile) {
