@@ -990,6 +990,7 @@ body {
   border-radius: 12px;
   background-color: lightgray;
   overflow: hidden;
+  aspect-ratio: 263/263;
 }
 .card-arrival__img:not(:last-child) {
   margin-bottom: 27px;
@@ -997,7 +998,7 @@ body {
 .card-arrival__img img {
   width: 100%;
   height: 100%;
-  aspect-ratio: 263 / 263;
+  aspect-ratio: 1 / 1;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
