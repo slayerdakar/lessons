@@ -164,12 +164,12 @@ body {
 }
 
 .categories-men__title, .saving-zone__title, .arrival__title {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
@@ -193,8 +193,6 @@ body {
 }
 .categories-men__title::before, .saving-zone__title::before, .arrival__title::before {
   content: "";
-  position: relative;
-  top: 4px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 6px;
