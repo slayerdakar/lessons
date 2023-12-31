@@ -51,18 +51,29 @@ $mobile: 539.98px;
 }
 
 %title {
+  display: inline-flex;
+  align-items: flex-start;
+  column-gap: 20px;
   color: #3c4242;
   font-family: "Core Sans C", sans-serif;
   font-size: 34px;
   font-weight: 700;
   letter-spacing: 0.68px;
-  padding-left: 26px;
-  position: relative;
+  // padding-left: 26px;
+  line-height: 1.2;
+  // position: relative;
+  @include margBottNotLast(70px);
+  @media (max-width: $tablet) {
+    font-size: 30px;
+    @include margBottNotLast(40px);
+  }
   &::before {
     content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: relative;
+    // position: absolute;
+    // left: 0;
+    top: 4px;
+    flex-shrink: 0;
     width: 6px;
     height: 30px;
     @include borderRadiusCard();
@@ -631,11 +642,11 @@ $mobile: 539.98px;
 
   &__title {
     @extend %title;
-    @include margBottNotLast(70px);
-    @media (max-width: $tablet) {
-      font-size: 30px;
-      @include margBottNotLast(40px);
-    }
+    // @include margBottNotLast(70px);
+    // @media (max-width: $tablet) {
+    //   font-size: 30px;
+    //   @include margBottNotLast(40px);
+    // }
   }
 
   &__items {
@@ -707,11 +718,11 @@ $mobile: 539.98px;
 
   &__title {
     @extend %title;
-    @include margBottNotLast(70px);
-    @media (max-width: $tablet) {
-      font-size: 30px;
-      @include margBottNotLast(40px);
-    }
+    // @include margBottNotLast(70px);
+    // @media (max-width: $tablet) {
+    //   font-size: 30px;
+    //   @include margBottNotLast(40px);
+    // }
   }
 
   &__items {
@@ -1063,6 +1074,10 @@ $mobile: 539.98px;
 // _________________________fashion_________________________________
 
 .fashion {
+  @include margBottNotLast(100px);
+  @media (max-width: $tablet) {
+    @include margBottNotLast(50px);
+  }
   &__container {
     display: flex;
     min-height: 640px;
@@ -1180,6 +1195,120 @@ $mobile: 539.98px;
       top: 0;
       left: 0;
     }
+  }
+}
+
+// ______________________categories-men______________________
+
+.categories-men {
+  @include margBottNotLast(88px);
+  @media (max-width: $tablet) {
+    @include margBottNotLast(45px);
+  }
+  &__container {
+  }
+
+  &__title {
+    @extend %title;
+    // @include margBottNotLast(70px);
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    column-gap: 4%;
+    row-gap: 50px;
+    @media (max-width: $tablet) {
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    &.card-categories {
+      max-width: 100%;
+    }
+  }
+}
+.card-categories {
+  max-width: 272px;
+  display: inline-block;
+  width: 100%;
+  @media (any-hover: hover) {
+    &:hover img {
+      transform: scale(1.03);
+    }
+  }
+  &__img {
+    aspect-ratio: 272/393;
+    width: 100%;
+    @include borderRadiusCard(10px, lightgray, hidden);
+    @include margBottNotLast(15px);
+    position: relative;
+    .card-categories--blackout-less &::after,
+    .card-categories--blackout-more &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .card-categories--blackout-less &::after {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0.09) 100%);
+    }
+    .card-categories--blackout-more &::after {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.14) 100%);
+    }
+    img {
+      transition: transform 0.3s;
+      @include img(1, 1);
+    }
+  }
+  &__body {
+    display: flex;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    flex-grow: 1;
+  }
+
+  &__title {
+  }
+
+  &__link-title {
+    color: #2a2f2f;
+    font-size: 17.875px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.715px;
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__text {
+    & > *:not(:last-child) {
+      margin-bottom: 5px;
+    }
+    p {
+      color: #7f7f7f;
+      font-size: 13.407px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.536px;
+    }
+  }
+
+  &__link {
+    flex: 0 0 18px;
+    background: url("../img/icons/categories/arrow-card-categories.svg") center / contain no-repeat;
+    align-self: center;
+    padding: 20px 0;
   }
 }
 
