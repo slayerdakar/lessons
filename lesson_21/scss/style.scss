@@ -1403,8 +1403,6 @@ $partnersBrandsBG: #3c4242;
   @media (max-width: $tablet) {
     @include margBottNotLast(40px);
   }
-  &__container {
-  }
 
   &__title {
     @extend %title;
@@ -1488,9 +1486,6 @@ $partnersBrandsBG: #3c4242;
     flex-direction: column;
     flex-grow: 1;
     row-gap: 5px;
-  }
-
-  &__title {
   }
 
   &__link-title {
