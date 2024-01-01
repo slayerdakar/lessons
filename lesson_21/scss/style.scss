@@ -29,6 +29,8 @@ body {
 $tablet: 960px;
 $mobile: 539.98px;
 
+$partnersBrandsBG: #3c4242;
+
 @mixin img($aspRatWidth, $aspRatHeight) {
   width: 100%;
   height: 100%;
@@ -51,7 +53,7 @@ $mobile: 539.98px;
 
 %title {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   column-gap: 20px;
   color: #3c4242;
   font-family: "Core Sans C", sans-serif;
@@ -59,6 +61,7 @@ $mobile: 539.98px;
   font-weight: 700;
   letter-spacing: 0.68px;
   line-height: 1.2;
+  text-transform: capitalize;
   @include margBottNotLast(70px);
   @media (max-width: $tablet) {
     font-size: 30px;
@@ -66,6 +69,8 @@ $mobile: 539.98px;
   }
   &::before {
     content: "";
+    position: relative;
+    top: 2px;
     flex-shrink: 0;
     width: 6px;
     height: 30px;
@@ -347,6 +352,15 @@ $mobile: 539.98px;
 // _____________________hero________________________
 
 .page {
+  > *:last-child {
+    margin-bottom: 100px;
+    @media (max-width: $tablet) {
+      margin-bottom: 70px;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 40px;
+    }
+  }
   padding-top: 108px;
   @media (max-width: $tablet) {
     padding-top: 70px;
@@ -1182,13 +1196,13 @@ $mobile: 539.98px;
 }
 
 // ______________________categories-men______________________
+// ______________________categories-women _____________________
 
-.categories-men {
+.categories-men,
+.categories-women {
   @include margBottNotLast(88px);
   @media (max-width: $tablet) {
     @include margBottNotLast(45px);
-  }
-  &__container {
   }
 
   &__title {
@@ -1213,8 +1227,10 @@ $mobile: 539.98px;
 }
 .card-categories {
   max-width: 272px;
-  display: inline-block;
   width: 100%;
+  display: inline-flex;
+  row-gap: 15px;
+  flex-direction: column;
   @media (any-hover: hover) {
     &:hover img {
       transform: scale(1.03);
@@ -1222,9 +1238,7 @@ $mobile: 539.98px;
   }
   &__img {
     aspect-ratio: 272/393;
-    width: 100%;
     @include borderRadiusCard(10px, lightgray, hidden);
-    @include margBottNotLast(15px);
     position: relative;
     .card-categories--blackout-less &::after,
     .card-categories--blackout-more &::after {
@@ -1248,16 +1262,19 @@ $mobile: 539.98px;
   }
   &__body {
     display: flex;
+    flex-grow: 1;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    row-gap: 4px;
     flex-grow: 1;
+    row-gap: 4px;
+    padding-right: 10px;
   }
 
   &__title {
+    flex-grow: 1;
   }
 
   &__link-title {
@@ -1291,6 +1308,234 @@ $mobile: 539.98px;
     background: url("../img/icons/categories/arrow-card-categories.svg") center / contain no-repeat;
     align-self: center;
     padding: 20px 0;
+  }
+}
+
+// _________________________partners______________________
+
+.partners {
+  @include margBottNotLast(101px);
+  @media (max-width: $tablet) {
+    @include margBottNotLast(40px);
+  }
+  &__container {
+    max-width: 1263px;
+    padding: 0 15px;
+    margin: 0 auto;
+    @include borderRadiusCard(12px, $partnersBrandsBG, hidden);
+    border: 1.069px solid $partnersBrandsBG;
+    @media (max-width: 1263px) {
+      border-radius: 0;
+    }
+  }
+
+  &__body {
+    padding: 44px 25px 60px;
+    text-align: center;
+    color: #fff;
+    @media (max-width: $mobile) {
+      padding: 30px 25px 30px;
+    }
+  }
+
+  &__title {
+    font-family: "Core Sans C", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.2;
+    @include margBottNotLast(25px);
+    @media (max-width: 767.98px) {
+      font-size: 45px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 29px;
+    }
+  }
+
+  &__discount {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    @include margBottNotLast(67px);
+    @media (max-width: $mobile) {
+      font-size: 18px;
+      @include margBottNotLast(45px);
+    }
+    span {
+      color: #fbd103;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+  }
+
+  &__brands-items {
+    display: flex;
+    justify-content: center;
+    gap: 24.5px;
+    flex-wrap: wrap;
+  }
+
+  &__item-brands {
+    padding: 8px 14px;
+    display: flex;
+    justify-content: center;
+    flex: 0 0 177px;
+    height: 85px;
+    @include borderRadiusCard(12px, #fff, hidden);
+    transition: transform 0.3s;
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    img {
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+// _________________________limelight_____________________
+
+.limelight {
+  @include margBottNotLast(77px);
+  @media (max-width: $tablet) {
+    @include margBottNotLast(40px);
+  }
+  &__container {
+  }
+
+  &__title {
+    @extend %title;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 36px;
+    @media (max-width: $tablet) {
+      gap: 25px;
+    }
+  }
+
+  &__item {
+    &.card-limelight {
+      max-width: 100%;
+    }
+  }
+}
+.card-limelight {
+  max-width: 282px;
+  width: 100%;
+  display: inline-flex;
+  row-gap: 30px;
+  flex-direction: column;
+  @media (any-hover: hover) {
+    &:hover {
+      img {
+        transform: scale(1.03);
+      }
+      .card-limelight__link-title {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__img {
+    aspect-ratio: 282/370;
+    @include borderRadiusCard(12px, lightgray, hidden);
+    position: relative;
+    img {
+      transition: transform 0.3s;
+      @include img(1, 1);
+    }
+  }
+
+  &__favorite-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    @include borderRadiusCard(50%, #fff, hidden);
+    position: absolute;
+    top: 27px;
+    right: 21px;
+    transition: background-color 0.3s;
+    z-index: 1;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #8a33fd;
+        path {
+          fill: #fff;
+        }
+      }
+    }
+    svg {
+      width: 16px;
+      height: 15px;
+    }
+  }
+
+  &__body {
+    color: #3c4242;
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    row-gap: 5px;
+  }
+
+  &__title {
+  }
+
+  &__link-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 160px;
+  }
+
+  &__text {
+    max-width: 160px;
+    & > *:not(:last-child) {
+      margin-bottom: 5px;
+    }
+    p {
+      color: #807d7e;
+      font-weight: 500;
+      line-height: 1.2;
+      text-transform: capitalize;
+    }
+  }
+
+  &__price {
+    padding: 10px 16px;
+    @include borderRadiusCard(8px, #f6f6f6, hidden);
+    text-align: center;
+    min-width: 82px;
+    align-self: center;
+    transition: background-color 0.3s;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #cecece;
+      }
+    }
+    span {
+      font-weight: 700;
+      line-height: 1.2;
+      &::before {
+        content: "$";
+        padding-right: 1px;
+      }
+    }
   }
 }
 
