@@ -248,6 +248,24 @@ $partnersBrandsBG: #3c4242;
     flex-basis: 130px;
   }
 
+  &__btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px 0 0 8px;
+    overflow: hidden;
+    height: 100%;
+    width: 50px;
+    img {
+      position: relative;
+      left: 5px;
+      width: 20px;
+      height: 20px;
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+
   &__input {
     height: 44px;
     width: 100%;
@@ -261,15 +279,6 @@ $partnersBrandsBG: #3c4242;
     @media (max-width: $mobile) {
       height: 40px;
     }
-  }
-  img {
-    position: absolute;
-    top: 50%;
-    left: 22px;
-    width: 20px;
-    height: 20px;
-    transform: translateY(-50%);
-    max-width: 100%;
   }
 }
 .actions-header {
