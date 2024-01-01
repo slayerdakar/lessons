@@ -2001,6 +2001,9 @@ body {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .card-limelight__content {
   display: -webkit-box;
@@ -2025,6 +2028,15 @@ body {
   width: 160px;
 }
 .card-limelight__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   max-width: 160px;
 }
 .card-limelight__text > *:not(:last-child) {

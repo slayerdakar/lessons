@@ -1479,6 +1479,7 @@ $partnersBrandsBG: #3c4242;
     color: #3c4242;
     display: flex;
     column-gap: 10px;
+    flex-grow: 1;
   }
 
   &__content {
@@ -1499,6 +1500,9 @@ $partnersBrandsBG: #3c4242;
   }
 
   &__text {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
     max-width: 160px;
     & > *:not(:last-child) {
       margin-bottom: 5px;
