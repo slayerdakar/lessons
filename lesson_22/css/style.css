@@ -281,12 +281,6 @@ body {
             column-gap: 1.25rem;
   }
 }
-@media (max-width: 54.375em) {
-  .info-header__left, .info-header__right {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
 .info-header__item {
   display: -webkit-box;
   display: -ms-flexbox;

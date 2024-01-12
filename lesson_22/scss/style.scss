@@ -136,9 +136,6 @@ body {
     column-gap: toRem(50);
     @include adaptiveValue("column-gap", 50, 20, 0, 1300, 800);
     row-gap: toRem(5);
-    @media (max-width: toEm(870)) {
-      flex-wrap: nowrap;
-    }
   }
 
   &__item {
