@@ -246,10 +246,40 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 1.25rem;
-     -moz-column-gap: 1.25rem;
-          column-gap: 1.25rem;
+  -webkit-column-gap: 3.125rem;
+     -moz-column-gap: 3.125rem;
+          column-gap: 3.125rem;
   row-gap: 0.3125rem;
+}
+@media (min-width: 81.25em) {
+  .info-header__left, .info-header__right {
+    -webkit-column-gap: 3.125rem;
+       -moz-column-gap: 3.125rem;
+            column-gap: 3.125rem;
+  }
+}
+@media (min-width: 50em) and (max-width: 81.25em) {
+  @supports ((-moz-column-gap: clamp( 1.25rem , -1.75rem  +  6vw , 3.125rem )) or (column-gap: clamp( 1.25rem , -1.75rem  +  6vw , 3.125rem ))) {
+    .info-header__left, .info-header__right {
+      -webkit-column-gap: clamp( 1.25rem , -1.75rem  +  6vw , 3.125rem );
+         -moz-column-gap: clamp( 1.25rem , -1.75rem  +  6vw , 3.125rem );
+              column-gap: clamp( 1.25rem , -1.75rem  +  6vw , 3.125rem );
+    }
+  }
+  @supports not ((-moz-column-gap: clamp( 1.25rem , -1.75rem  +  6vw , 3.125rem )) or (column-gap: clamp( 1.25rem , -1.75rem  +  6vw , 3.125rem ))) {
+    .info-header__left, .info-header__right {
+      -webkit-column-gap: calc(1.25rem + 1.875 * (100vw - 50rem) / 31.25);
+         -moz-column-gap: calc(1.25rem + 1.875 * (100vw - 50rem) / 31.25);
+              column-gap: calc(1.25rem + 1.875 * (100vw - 50rem) / 31.25);
+    }
+  }
+}
+@media (max-width: 50em) {
+  .info-header__left, .info-header__right {
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+  }
 }
 @media (max-width: 54.375em) {
   .info-header__left, .info-header__right {
