@@ -137,6 +137,16 @@ body {
   line-height: 1.21;
 }
 
+.button {
+  padding: 1.1666666667em 1.9444444444em 1.2222222222em 1.9444444444em;
+  background-color: #6b77e5;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
 .header {
   position: sticky;
   z-index: 50;
@@ -521,21 +531,12 @@ body {
 .main-header__btn {
   position: relative;
   z-index: 5;
-  padding: 1.1666666667em 1.9444444444em 1.2222222222em 1.9444444444em;
-  background-color: #6b77e5;
-  color: #fff;
-  text-align: center;
   font-family: "Cabin", sans-serif;
-  font-weight: 600;
-  line-height: 1.2;
-  white-space: nowrap;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  text-transform: capitalize;
 }
 @media (max-width: 61.99875em) {
   .main-header__btn {
-    white-space: normal;
     padding: 0.8333333333em 1.6111111111em 0.8888888889em 1.6111111111em;
     font-size: 0.8888888889em;
   }
@@ -1003,10 +1004,6 @@ body {
   padding: 1.1666666667em 1.5em;
   background-color: #40ddb6;
   color: #37393f;
-  text-align: center;
-  font-weight: 600;
-  line-height: 1.27;
-  text-transform: capitalize;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -1593,12 +1590,6 @@ body {
 }
 .plan-right__btn {
   padding: 1.1666666667em 1.5em 1.2222222222em 1.5em;
-  color: #fff;
-  text-align: center;
-  font-weight: 600;
-  line-height: 1.2;
-  text-transform: capitalize;
-  background-color: #6b77e5;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }

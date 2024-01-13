@@ -77,6 +77,16 @@ body {
   line-height: 1.21;
 }
 
+.button {
+  padding: toEm(21, 18) toEm(35, 18) toEm(22, 18) toEm(35, 18);
+  background-color: #6b77e5;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
 // __________________________info-header_____________________
 
 .header {
@@ -287,18 +297,10 @@ body {
   &__btn {
     position: relative;
     z-index: 5;
-    padding: toEm(21, 18) toEm(35, 18) toEm(22, 18) toEm(35, 18);
-    background-color: #6b77e5;
-    color: #fff;
-    text-align: center;
     font-family: "Cabin", sans-serif;
-    font-weight: 600;
-    line-height: 1.2;
-    white-space: nowrap;
     transition: all 0.3s;
-    text-transform: capitalize;
+    // text-transform: capitalize;
     @media (max-width: toEm($tablet)) {
-      white-space: normal;
       padding: toEm(15, 18) toEm(29, 18) toEm(16, 18) toEm(29, 18);
       font-size: toEm(16, 18);
     }
@@ -594,10 +596,6 @@ body {
     padding: toEm(21, 18) toEm(27, 18);
     background-color: #40ddb6;
     color: #37393f;
-    text-align: center;
-    font-weight: 600;
-    line-height: 1.27;
-    text-transform: capitalize;
     transition: all 0.3s;
     @media (any-hover: hover) {
       &:hover {
@@ -851,12 +849,6 @@ body {
 
   &__btn {
     padding: toEm(21, 18) toEm(27, 18) toEm(22, 18) toEm(27, 18);
-    color: #fff;
-    text-align: center;
-    font-weight: 600;
-    line-height: 1.2;
-    text-transform: capitalize;
-    background-color: #6b77e5;
     transition: all 0.3s;
     @media (any-hover: hover) {
       &:hover {
