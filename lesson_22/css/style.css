@@ -665,8 +665,8 @@ body {
   content: "";
   background: url("../img/main-header/icon-arrow.svg") 0 0/contain no-repeat;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 0.4444444444em;
-          flex: 0 0 0.4444444444em;
+      -ms-flex: 0 0 0.5em;
+          flex: 0 0 0.5em;
   width: 0.5em;
   height: 0.2777777778em;
   -webkit-transition: all 0.3s;
