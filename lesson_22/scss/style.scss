@@ -520,7 +520,7 @@ body {
     padding-right: percent(116, 1920);
     padding-left: percent(116, 1920);
     position: relative;
-    @media (min-width: toEm(1921)) {
+    @media (min-width: toEm(1920)) {
       flex-basis: percent(828, 1920);
       padding-left: 0;
       padding-right: toRem(116);
@@ -569,9 +569,9 @@ body {
 
   &__text {
     max-width: toEm(482);
-    @include margBottNotLast(toEm(35));
+    @include margBottNotLast(toRem(35));
     > *:not(:last-child) {
-      margin-bottom: toEm(5);
+      margin-bottom: toEm(5, 18);
     }
     p {
       @include adaptiveValue("font-size", 18, 16, 0, 1300, 320);
@@ -585,9 +585,9 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    max-width: toRem(595, 18);
+    max-width: toRem(595);
     gap: toEm(30, 18);
-    @media (max-width: toEm(500)) {
+    @media (max-width: toEm(471)) {
       justify-content: center;
     }
   }
@@ -603,7 +603,7 @@ body {
         color: #434fc0;
       }
     }
-    @media (max-width: toEm(500)) {
+    @media (max-width: toEm(471)) {
       flex-grow: 1;
     }
   }
@@ -613,7 +613,7 @@ body {
     display: flex;
     align-items: center;
     gap: toEm(10, 18);
-    @media (max-width: toEm(500)) {
+    @media (max-width: toEm(471)) {
       justify-content: center;
     }
     @media (any-hover: hover) {
@@ -674,7 +674,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   flex-basis: percent(828, 1920);
-  padding: toRem(145, 18) 0;
+  padding: toRem(145);
   padding-left: 15px;
   padding-right: percent(68, 1920);
   @include adaptiveValue("padding-top", 145, 40, 0, 1250, 320);
@@ -751,7 +751,7 @@ body {
 .plan-right {
   display: flex;
   flex-basis: percent(1091, 1920);
-  padding: toRem(145, 18) 0;
+  padding: toRem(145);
   padding-right: 15px;
   padding-left: percent(68, 1920);
   @include adaptiveValue("padding-top", 145, 40, 0, 1250, 320);
@@ -926,7 +926,7 @@ body {
     font-size: toRem(30);
     @include adaptiveValue("font-size", 30, 18, 0, 1920, 320);
     text-align: center;
-    padding: toEm(50, 30) 0;
+    padding: toEm(50, 30);
     line-height: 1.2;
     box-shadow: inset 0px 0px 40px 40px rgba(56, 56, 56, 0.1);
   }
