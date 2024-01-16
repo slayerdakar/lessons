@@ -79,11 +79,8 @@ else {
 
 function calcDiv(a, b) {
   const result = a / b;
-  if (result != 0 && result != undefined && result != Infinity && !isNaN(result)) {
+  if (isFinite(result)) {
     return console.log(`Результат ділення: ${result}`)
-  }
-  else {
-    console.log(`Помилка`);
   }
 }
 calcDiv('6', 3)
