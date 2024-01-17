@@ -25,7 +25,7 @@ function addUl(item = 5) {
   bodyElement.insertAdjacentElement("afterbegin", newUl)
 }
 
-addUl()
+addUl(10)
 
 
 // Задача №3_________________________
@@ -73,13 +73,16 @@ for (let i = 0; i < someElements.length; i++) {
 const someButton = document.querySelector('.button')
 
 // const buttonPos = someButton.offsetTop
-// window.scrollTo({
-//   top: buttonPos,
-//   let: 0,
-//   behavior: "smooth"
-// });
+// if (someButton) {
+//   window.scrollTo({
+//     top: buttonPos,
+//     let: 0,
+//     behavior: "smooth"
+//   });
+// }
 
 // або
+
 
 function scrollToBlock() {
   someButton.scrollIntoView({
@@ -90,7 +93,10 @@ function scrollToBlock() {
     behavior: "smooth"
   })
 };
-scrollToBlock()
+
+if (someButton) {
+  scrollToBlock()
+}
 
 
 
@@ -103,10 +109,12 @@ scrollToBlock()
 // Відповідь:
 
 const someLink = document.querySelector('.link')
-someLink.dataset.someAttr = "100"
-let valueAttr = parseFloat(someLink.dataset.someAttr);
-if (someLink.hasAttribute('data-some-attr')) {
-  if (valueAttr < 200) {
-    someLink.style.color = `red`
+if (someLink) {
+  someLink.dataset.someAttr = "100"
+  let valueAttr = parseFloat(someLink.dataset.someAttr);
+  if (someLink.hasAttribute('data-some-attr')) {
+    if (valueAttr < 200) {
+      someLink.style.color = `red`
+    }
   }
 } 
