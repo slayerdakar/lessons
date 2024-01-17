@@ -5,8 +5,8 @@
 
 // Відповідь:
 
-// const bodyElement = document.body;
-// console.log(bodyElement)
+const bodyElement = document.body;
+console.log(bodyElement)
 
 
 // Задача №2____________________________
@@ -16,16 +16,16 @@
 // Відповідь:
 
 // const bodyElement = document.body
-// function addUl(item = 5) {
-//   const newUl = document.createElement('ul')
-//   for (let i = 1; i <= item; i++) {
-//     const newLi = document.createElement('li')
-//     newUl.append(newLi)
-//   }
-//   bodyElement.insertAdjacentElement("afterbegin", newUl)
-// }
+function addUl(item = 5) {
+  const newUl = document.createElement('ul')
+  for (let i = 1; i <= item; i++) {
+    const newLi = document.createElement('li')
+    newUl.append(newLi)
+  }
+  bodyElement.insertAdjacentElement("afterbegin", newUl)
+}
 
-// addUl()
+addUl()
 
 
 // Задача №3_________________________
@@ -36,10 +36,10 @@
 // Відповідь:
 
 // const bodyElement = document.body
-// bodyElement.classList.add('loaded');
-// if (bodyElement.classList.contains('loaded')) {
-//   bodyElement.style.color = `red`;
-// }
+bodyElement.classList.add('loaded');
+if (bodyElement.classList.contains('loaded')) {
+  bodyElement.style.color = `green`;
+}
 
 // Задача №4 __________________________
 // Дано в html: три елементи з класом item.
@@ -48,12 +48,12 @@
 
 // Відповідь:
 
-// const someElements = document.querySelectorAll('.item')
+const someElements = document.querySelectorAll('.item')
 
-// for (let i = 0; i < someElements.length; i++) {
-//   someElements[i].classList.add('active');
-//   someElements[i].textContent = `Елемент №${i + 1}`
-// }
+for (let i = 0; i < someElements.length; i++) {
+  someElements[i].classList.add('active');
+  someElements[i].textContent = `Елемент №${i + 1}`
+}
 
 // або
 
@@ -70,7 +70,7 @@
 
 // Відповідь:
 
-// const someButton = document.querySelector('.button')
+const someButton = document.querySelector('.button')
 
 // const buttonPos = someButton.offsetTop
 // window.scrollTo({
@@ -81,16 +81,16 @@
 
 // або
 
-// function scrollToBlock() {
-//   someButton.scrollIntoView({
-//     //"start", "center", "end". За замовчуванням "center".
-//     block: "center",
-//     //"start", "center", "end" чи "nearest". За замовчуванням "nearest".
-//     inline: "nearest",
-//     behavior: "smooth"
-//   })
-// };
-// scrollToBlock()
+function scrollToBlock() {
+  someButton.scrollIntoView({
+    //"start", "center", "end". За замовчуванням "center".
+    block: "center",
+    //"start", "center", "end" чи "nearest". За замовчуванням "nearest".
+    inline: "nearest",
+    behavior: "smooth"
+  })
+};
+scrollToBlock()
 
 
 
@@ -102,11 +102,11 @@
 
 // Відповідь:
 
-// const someLink = document.querySelector('.link')
-// someLink.dataset.someAttr = "100"
-// let valueAttr = parseFloat(someLink.dataset.someAttr);
-// if (someLink.hasAttribute('data-some-attr')) {
-//   if (valueAttr < 200) {
-//     someLink.style.color = `red`
-//   }
-// } 
+const someLink = document.querySelector('.link')
+someLink.dataset.someAttr = "100"
+let valueAttr = parseFloat(someLink.dataset.someAttr);
+if (someLink.hasAttribute('data-some-attr')) {
+  if (valueAttr < 200) {
+    someLink.style.color = `red`
+  }
+} 
