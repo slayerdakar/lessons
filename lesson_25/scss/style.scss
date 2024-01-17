@@ -1,0 +1,27 @@
+@use "sass:math";
+
+@import "_fonts.scss";
+@import "_reset.scss";
+@import "_functions.scss";
+
+// [class*="__container"] {
+//   max-width: 1250px;
+//   padding: 0 15px;
+//   margin: 0 auto;
+// }
+
+[class*="__container"] {
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 10px 30px;
+  background-color: brown;
+}
+
+.link {
+  font-size: 30px;
+  color: green;
+}
