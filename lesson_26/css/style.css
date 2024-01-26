@@ -82,6 +82,10 @@ textarea {
   margin: 0 auto;
 }
 
+body {
+  background-color: transparent;
+}
+
 .wrapper {
   overflow: clip;
   min-height: 100%;

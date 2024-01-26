@@ -131,9 +131,16 @@
 
 document.addEventListener('click', documentAction)
 
+// function documentAction(e) {
+//   const targetElement = e.target
+//   if (targetElement.closest('.item')) {
+//     targetElement.classList.toggle('active')
+//     e.preventDefault()
+//   }
+// }
 function documentAction(e) {
-  const targetElement = e.target
-  if (targetElement.closest('.item')) {
+  const targetElement = e.target.closest('.item')
+  if (targetElement) {
     targetElement.classList.toggle('active')
     e.preventDefault()
   }
@@ -161,10 +168,10 @@ function pageLoaded() {
 const header = document.querySelector('.header');
 const footer = document.querySelector('.footer');
 if (header && footer) {
-  header.addEventListener('mouseover', () => {
+  header.addEventListener('mouseenter', () => {
     footer.style.backgroundColor = '#492f2f'
   })
-  header.addEventListener('mouseout', () => {
+  header.addEventListener('mouseleave', () => {
     footer.style.backgroundColor = '#cecece'
   })
 }
@@ -177,8 +184,8 @@ if (header && footer) {
 
 
 const itemElement = document.querySelector('.item-counter')
-const maxCount = Math.abs(Math.round(parseFloat(itemElement.getAttribute('data-max-num'))))
-const interval = Math.abs(Math.round(parseFloat(itemElement.getAttribute('data-interval-time'))))
+const maxCount = parseInt(itemElement.getAttribute('data-max-num'))
+const interval = parseInt(itemElement.getAttribute('data-interval-time'))
 
 
 let options = {
@@ -191,11 +198,13 @@ let callback = (entries, observer) => {
   entries.forEach((entry) => {
     const itemElement = entry.target;
     if (entry.isIntersecting) {
-      if (itemElement && itemElement.hasAttribute('data-max-num') && itemElement.hasAttribute('data-interval-time') && maxCount !== 0) {
+      if (itemElement.hasAttribute('data-max-num') && itemElement.hasAttribute('data-interval-time') && maxCount !== 0) {
         let i = 1
         let timer = setInterval(() => {
           itemElement.textContent = i
-          i === maxCount ? clearInterval(timer) : null
+          if (i === maxCount) {
+            clearInterval(timer)
+          }
           ++i
         }, interval)
       }
